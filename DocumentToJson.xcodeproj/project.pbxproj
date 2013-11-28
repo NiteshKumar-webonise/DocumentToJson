@@ -165,24 +165,6 @@
 		59E82BF01845D224001859F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E82BD21845D224001859F0 /* UIKit.framework */; };
 		59E82BF81845D224001859F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59E82BF61845D224001859F0 /* InfoPlist.strings */; };
 		59E82BFA1845D224001859F0 /* DocumentToJsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E82BF91845D224001859F0 /* DocumentToJsonTests.m */; };
-		59E82C161845D826001859F0 /* coaches.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C041845D826001859F0 /* coaches.html */; };
-		59E82C171845D826001859F0 /* eligibility.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C051845D826001859F0 /* eligibility.html */; };
-		59E82C181845D826001859F0 /* equipment.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C061845D826001859F0 /* equipment.html */; };
-		59E82C191845D826001859F0 /* field.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C071845D826001859F0 /* field.html */; };
-		59E82C1A1845D826001859F0 /* flagpulling.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C081845D826001859F0 /* flagpulling.html */; };
-		59E82C1B1845D826001859F0 /* formations.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C091845D826001859F0 /* formations.html */; };
-		59E82C1C1845D826001859F0 /* game.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C0A1845D826001859F0 /* game.html */; };
-		59E82C1D1845D826001859F0 /* liveballdeadball.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C0B1845D826001859F0 /* liveballdeadball.html */; };
-		59E82C1E1845D826001859F0 /* passing.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C0C1845D826001859F0 /* passing.html */; };
-		59E82C1F1845D826001859F0 /* penalties.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C0D1845D826001859F0 /* penalties.html */; };
-		59E82C201845D826001859F0 /* receiving.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C0E1845D826001859F0 /* receiving.html */; };
-		59E82C211845D826001859F0 /* rosters.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C0F1845D826001859F0 /* rosters.html */; };
-		59E82C221845D826001859F0 /* running.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C101845D826001859F0 /* running.html */; };
-		59E82C231845D826001859F0 /* rushingthepasser.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C111845D826001859F0 /* rushingthepasser.html */; };
-		59E82C241845D826001859F0 /* scoring.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C121845D826001859F0 /* scoring.html */; };
-		59E82C251845D826001859F0 /* terminology.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C131845D826001859F0 /* terminology.html */; };
-		59E82C261845D826001859F0 /* timingandovertime.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C141845D826001859F0 /* timingandovertime.html */; };
-		59E82C271845D826001859F0 /* unsportsmanlikeconduct.html in Resources */ = {isa = PBXBuildFile; fileRef = 59E82C151845D826001859F0 /* unsportsmanlikeconduct.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -339,7 +321,7 @@
 		596FC5D9184772DC007E7132 /* unfairacts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = unfairacts.html; sourceTree = "<group>"; };
 		596FC5DA184772DC007E7132 /* unsportsmanlikeconduct.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = unsportsmanlikeconduct.html; sourceTree = "<group>"; };
 		596FC5DB184772DC007E7132 /* update_from_file_to_table */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update_from_file_to_table; sourceTree = "<group>"; };
-		596FC5DC184772DC007E7132 /* usaf_rules */ = {isa = PBXFileReference; lastKnownFileType = file; path = usaf_rules; sourceTree = "<group>"; };
+		596FC5DC184772DC007E7132 /* usaf_rules */ = {isa = PBXFileReference; lastKnownFileType = text; path = usaf_rules; sourceTree = "<group>"; };
 		59E82BCB1845D224001859F0 /* DocumentToJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentToJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E82BCE1845D224001859F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		59E82BD01845D224001859F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -360,24 +342,6 @@
 		59E82BF71845D224001859F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59E82BF91845D224001859F0 /* DocumentToJsonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentToJsonTests.m; sourceTree = "<group>"; };
 		59E82C031845D392001859F0 /* Flag Rule Book.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Flag Rule Book.docx"; sourceTree = "<group>"; };
-		59E82C041845D826001859F0 /* coaches.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coaches.html; sourceTree = "<group>"; };
-		59E82C051845D826001859F0 /* eligibility.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = eligibility.html; sourceTree = "<group>"; };
-		59E82C061845D826001859F0 /* equipment.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = equipment.html; sourceTree = "<group>"; };
-		59E82C071845D826001859F0 /* field.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = field.html; sourceTree = "<group>"; };
-		59E82C081845D826001859F0 /* flagpulling.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = flagpulling.html; sourceTree = "<group>"; };
-		59E82C091845D826001859F0 /* formations.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = formations.html; sourceTree = "<group>"; };
-		59E82C0A1845D826001859F0 /* game.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = game.html; sourceTree = "<group>"; };
-		59E82C0B1845D826001859F0 /* liveballdeadball.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = liveballdeadball.html; sourceTree = "<group>"; };
-		59E82C0C1845D826001859F0 /* passing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = passing.html; sourceTree = "<group>"; };
-		59E82C0D1845D826001859F0 /* penalties.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = penalties.html; sourceTree = "<group>"; };
-		59E82C0E1845D826001859F0 /* receiving.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = receiving.html; sourceTree = "<group>"; };
-		59E82C0F1845D826001859F0 /* rosters.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = rosters.html; sourceTree = "<group>"; };
-		59E82C101845D826001859F0 /* running.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = running.html; sourceTree = "<group>"; };
-		59E82C111845D826001859F0 /* rushingthepasser.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = rushingthepasser.html; sourceTree = "<group>"; };
-		59E82C121845D826001859F0 /* scoring.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = scoring.html; sourceTree = "<group>"; };
-		59E82C131845D826001859F0 /* terminology.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = terminology.html; sourceTree = "<group>"; };
-		59E82C141845D826001859F0 /* timingandovertime.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = timingandovertime.html; sourceTree = "<group>"; };
-		59E82C151845D826001859F0 /* unsportsmanlikeconduct.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = unsportsmanlikeconduct.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -603,24 +567,6 @@
 			isa = PBXGroup;
 			children = (
 				596FC54C184772DB007E7132 /* RulesDetails */,
-				59E82C041845D826001859F0 /* coaches.html */,
-				59E82C051845D826001859F0 /* eligibility.html */,
-				59E82C061845D826001859F0 /* equipment.html */,
-				59E82C071845D826001859F0 /* field.html */,
-				59E82C081845D826001859F0 /* flagpulling.html */,
-				59E82C091845D826001859F0 /* formations.html */,
-				59E82C0A1845D826001859F0 /* game.html */,
-				59E82C0B1845D826001859F0 /* liveballdeadball.html */,
-				59E82C0C1845D826001859F0 /* passing.html */,
-				59E82C0D1845D826001859F0 /* penalties.html */,
-				59E82C0E1845D826001859F0 /* receiving.html */,
-				59E82C0F1845D826001859F0 /* rosters.html */,
-				59E82C101845D826001859F0 /* running.html */,
-				59E82C111845D826001859F0 /* rushingthepasser.html */,
-				59E82C121845D826001859F0 /* scoring.html */,
-				59E82C131845D826001859F0 /* terminology.html */,
-				59E82C141845D826001859F0 /* timingandovertime.html */,
-				59E82C151845D826001859F0 /* unsportsmanlikeconduct.html */,
 				59E82C031845D392001859F0 /* Flag Rule Book.docx */,
 				59E82BD61845D224001859F0 /* DocumentToJson-Info.plist */,
 				59E82BD71845D224001859F0 /* InfoPlist.strings */,
@@ -748,11 +694,9 @@
 				596FC5E1184772DC007E7132 /* ballbecomesdead.html in Resources */,
 				596FC5FB184772DC007E7132 /* encroachment.html in Resources */,
 				596FC609184772DC007E7132 /* formations.html in Resources */,
-				59E82C221845D826001859F0 /* running.html in Resources */,
 				596FC611184772DC007E7132 /* gameelements.html in Resources */,
 				596FC655184772DC007E7132 /* statusoftheball.html in Resources */,
 				596FC616184772DC007E7132 /* Illegalhelmetcontactcontactingopponentshead.html in Resources */,
-				59E82C1C1845D826001859F0 /* game.html in Resources */,
 				596FC650184772DC007E7132 /* scrimmagekicks.html in Resources */,
 				596FC62A184772DC007E7132 /* linetogainandmeasurements.html in Resources */,
 				596FC5F4184772DC007E7132 /* delayofgame.html in Resources */,
@@ -760,20 +704,16 @@
 				596FC63D184772DC007E7132 /* penaltiesontouchdowns.html in Resources */,
 				596FC605184772DC007E7132 /* firsttouching.html in Resources */,
 				596FC66C184772DC007E7132 /* usaf_rules in Resources */,
-				59E82C241845D826001859F0 /* scoring.html in Resources */,
-				59E82C1B1845D826001859F0 /* formations.html in Resources */,
 				596FC5F8184772DC007E7132 /* effectofapenalty.html in Resources */,
 				596FC656184772DC007E7132 /* strikingkickingorkneeinganopponent.html in Resources */,
 				596FC641184772DC007E7132 /* personalfouls.html in Resources */,
 				596FC61A184772DC007E7132 /* illegalplayerequipment.html in Resources */,
-				59E82C1A1845D826001859F0 /* flagpulling.html in Resources */,
 				596FC63C184772DC007E7132 /* penaltiesonfieldgoals.html in Resources */,
 				596FC65E184772DC007E7132 /* thesnapandthesnapper.html in Resources */,
 				596FC64B184772DC007E7132 /* roughingthepasser.html in Resources */,
 				596FC668184772DC007E7132 /* typesofplays.html in Resources */,
 				596FC615184772DC007E7132 /* holding.html in Resources */,
 				596FC62F184772DC007E7132 /* liveballdeadball.html in Resources */,
-				59E82C271845D826001859F0 /* unsportsmanlikeconduct.html in Resources */,
 				596FC614184772DC007E7132 /* helpingtherunner.html in Resources */,
 				596FC621184772DC007E7132 /* interferencebya.html in Resources */,
 				596FC643184772DC007E7132 /* playeractions.html in Resources */,
@@ -801,14 +741,12 @@
 				596FC5E4184772DC007E7132 /* basicprocedure.html in Resources */,
 				596FC61C184772DC007E7132 /* illegaluseofhandsorarms.html in Resources */,
 				596FC5F5184772DC007E7132 /* doubleandmultiplefouls.html in Resources */,
-				59E82C201845D826001859F0 /* receiving.html in Resources */,
 				596FC630184772DC007E7132 /* mandatoryplayerequipment.html in Resources */,
 				596FC5DD184772DC007E7132 /* areasofthefield.html in Resources */,
 				596FC5FA184772DC007E7132 /* eligiblereceivers.html in Resources */,
 				596FC65D184772DC007E7132 /* thegoal.html in Resources */,
 				596FC5EC184772DC007E7132 /* clockrestartsonsnap.html in Resources */,
 				596FC658184772DC007E7132 /* supplementaryequipment.html in Resources */,
-				59E82C1D1845D826001859F0 /* liveballdeadball.html in Resources */,
 				596FC5F2184772DC007E7132 /* cointoss.html in Resources */,
 				596FC660184772DC007E7132 /* timeouts.html in Resources */,
 				596FC619184772DC007E7132 /* illegalpasses.html in Resources */,
@@ -818,7 +756,6 @@
 				596FC623184772DC007E7132 /* interlockedblocking.html in Resources */,
 				596FC665184772DC007E7132 /* tripping.html in Resources */,
 				596FC633184772DC007E7132 /* newseries.html in Resources */,
-				59E82C1E1845D826001859F0 /* passing.html in Resources */,
 				596FC640184772DC007E7132 /* periodends.html in Resources */,
 				596FC64D184772DC007E7132 /* rushingthepasser.html in Resources */,
 				596FC5F9184772DC007E7132 /* eligibility.html in Resources */,
@@ -843,7 +780,6 @@
 				59E82BE71845D224001859F0 /* Images.xcassets in Resources */,
 				596FC60B184772DC007E7132 /* foulsoccuringbehindtheendoftherun.html in Resources */,
 				596FC65F184772DC007E7132 /* timefactors.html in Resources */,
-				59E82C191845D826001859F0 /* field.html in Resources */,
 				596FC65C184772DC007E7132 /* thefield.html in Resources */,
 				596FC5EF184772DC007E7132 /* clockstops.html in Resources */,
 				596FC5ED184772DC007E7132 /* clockstarts.html in Resources */,
@@ -855,13 +791,11 @@
 				596FC629184772DC007E7132 /* linesandmarkings.html in Resources */,
 				596FC5F1184772DC007E7132 /* coachesfieldequipment.html in Resources */,
 				596FC603184772DC007E7132 /* fieldgoal.html in Resources */,
-				59E82C161845D826001859F0 /* coaches.html in Resources */,
 				596FC5E3184772DC007E7132 /* ballplacement.html in Resources */,
 				596FC613184772DC007E7132 /* handingtheball.html in Resources */,
 				596FC648184772DC007E7132 /* ResumingplayafteraFieldgoaltry.html in Resources */,
 				596FC634184772DC007E7132 /* nonplayerandunsportsmanlikefoul.html in Resources */,
 				596FC61D184772DC007E7132 /* incomplete.html in Resources */,
-				59E82C1F1845D826001859F0 /* penalties.html in Resources */,
 				596FC5E9184772DC007E7132 /* catchandcompletedpass.html in Resources */,
 				59E82BD91845D224001859F0 /* InfoPlist.strings in Resources */,
 				596FC63A184772DC007E7132 /* passing.html in Resources */,
@@ -869,12 +803,9 @@
 				596FC663184772DC007E7132 /* timingandovertime.html in Resources */,
 				59E82BE21845D224001859F0 /* Main.storyboard in Resources */,
 				596FC646184772DC007E7132 /* pylons.html in Resources */,
-				59E82C171845D826001859F0 /* eligibility.html in Resources */,
 				596FC610184772DC007E7132 /* gameballs.html in Resources */,
-				59E82C261845D826001859F0 /* timingandovertime.html in Resources */,
 				596FC62E184772DC007E7132 /* live-ballIllegalsubstitution.html in Resources */,
 				596FC659184772DC007E7132 /* tacklinghorsecollar.html in Resources */,
-				59E82C251845D826001859F0 /* terminology.html in Resources */,
 				596FC60E184772DC007E7132 /* freekicks.html in Resources */,
 				596FC664184772DC007E7132 /* touchdown.html in Resources */,
 				596FC5E8184772DC007E7132 /* blockingintheback.html in Resources */,
@@ -882,12 +813,9 @@
 				596FC642184772DC007E7132 /* placekick.html in Resources */,
 				596FC618184772DC007E7132 /* Illegalparticipation.html in Resources */,
 				596FC61E184772DC007E7132 /* index.html in Resources */,
-				59E82C231845D826001859F0 /* rushingthepasser.html in Resources */,
-				59E82C211845D826001859F0 /* rosters.html in Resources */,
 				596FC64F184772DC007E7132 /* scoring.html in Resources */,
 				596FC666184772DC007E7132 /* try.html in Resources */,
 				596FC5FD184772DC007E7132 /* extendingaperiod.html in Resources */,
-				59E82C181845D826001859F0 /* equipment.html in Resources */,
 				596FC612184772DC007E7132 /* halfthedistance.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

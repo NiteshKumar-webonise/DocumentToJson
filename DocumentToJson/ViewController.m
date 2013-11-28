@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#define kRWSearchCaseSensitiveKey    @"RWSearchCaseSensitiveKey"
+#define kRWSearchWholeWordsKey       @"RWSearchWholeWordsKey"
+
+
 @interface ViewController ()
 
 @end
@@ -18,21 +22,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    /*NSArray *rulesArr=[NSArray arrayWithObjects:@"Timing",@"Officials and their Duties",@"Field and Equipment",@"Basic Definitions",@"Kicks",@"Snapping and Handing the Ball",@"Passing",@"Series of Downs",@"Contact",@"Scoring and Touchbacks",@"Penalty Enforcement",@"Non-Contact Fouls", nil];
+    NSArray *allFiles=[self getAllfileNamesFromBundle];
      
-     NSArray *allFiles=[NSArray arrayWithObjects:@"game",@"terminology",@"eligibility",@"equipment",@"field",@"rosters",@"timingandovertime",@"scoring",@"coaches",@"liveballdeadball",@"running",@"passing",@"receiving",@"rushingthepasser",@"flagpulling",@"formations",@"unsportsmanlikeconduct",@"penalties", nil];
-     
-     NSMutableArray *allJson=[[NSMutableArray alloc]init];
-     NSMutableArray *youthTrack=[[NSMutableArray alloc]init];
-     
-     for(int i=0;i<[rulesArr count]; i++){
-     
+    NSMutableArray *allJson=[[NSMutableArray alloc]init];
+    
      
      for(int i=0;i<[allFiles count];i++){
-     NSString *path=[[NSBundle mainBundle]pathForResource:[allFiles objectAtIndex:i] ofType:@"html"];
+         NSString* fileName=[[[allFiles objectAtIndex:i] lastPathComponent] stringByDeletingPathExtension];
+       NSString *path=[[NSBundle mainBundle] pathForResource:fileName ofType:@"html"];
      if (!path){
-     NSLog(@"Unable to find file in bundle", nil);
-     continue;
+        NSLog(@"Unable to find file in bundle", nil);
+        continue;
      }
      NSString *contents =[NSString stringWithContentsOfFile:path encoding:NSASCIIStringEncoding error:nil];
      NSString *htmlStripped=[self stringByStrippingHTMLWithString:contents];
@@ -41,21 +41,62 @@
      dict =@{@"shareurl":@"",@"html":[allFiles objectAtIndex:i],@"description":data,@"fav":@false,@"rule":[allFiles objectAtIndex:i]};
      [allJson addObject:dict];
      }
-     
-     NSDictionary *outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":allJson};
-     
-     //NSString *jsonContent= [self getJsonFromDictionaryOrArray:outerDictionary];
-     //NSLog(@"%@",jsonContent);
-     //[self writeIntoFileWithString:jsonContent];
-     //NSDictionary *outerDictionary=[[NSDictionary alloc]init];
-     //outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":jsonContent};
-     [youthTrack addObject:outerDictionary];
-     }
-     NSString *jsonContent= [self getJsonFromDictionaryOrArray:youthTrack];
-     [self makePlistIntoHomeDirectoryWithContent:jsonContent];*/
-     
+    
+    NSString* searchString=@"game";
+    NSMutableArray* searchedFiles=[[NSMutableArray alloc]init];
     
     
+    for(int i=0;i<[allJson count];i++){
+       NSString *content= [[allJson objectAtIndex:i] valueForKey:@"description"];
+       NSRange visibleTextRange=NSMakeRange(0, content.length);
+       NSDictionary *options=@{@"RWReplacementKey": @0,@"RWSearchCaseSensitiveKey":@1,@"RWSearchWholeWordsKey":@0};
+        
+       NSRegularExpression *regex = [self regularExpressionWithString:searchString options:options];
+       NSArray *matches = [regex matchesInString:content options:NSMatchingProgress range:visibleTextRange];
+        if([matches count]>0){
+            [searchedFiles addObject:[[allJson objectAtIndex:i] valueForKey:@"html"]];
+        }
+    }
+    
+    NSLog(@"Searched file names %@",searchedFiles);
+     //NSString *jsonContent= [self getJsonFromDictionaryOrArray:youthTrack];
+     //[self makePlistIntoHomeDirectoryWithContent:jsonContent];
+    
+    
+}
+
+
+
+- (NSRegularExpression *)regularExpressionWithString:(NSString *)string options:(NSDictionary *)options
+{
+    // Create a regular expression
+    BOOL isCaseSensitive = [[options objectForKey:kRWSearchCaseSensitiveKey] boolValue];
+    BOOL isWholeWords = [[options objectForKey:kRWSearchWholeWordsKey] boolValue];
+    
+    NSError *error = NULL;
+    NSRegularExpressionOptions regexOptions = isCaseSensitive ? 0 : NSRegularExpressionCaseInsensitive;
+    
+    NSString *placeholder = isWholeWords ? @"\\b%@\\b" : @"%@";
+    NSString *pattern = [NSString stringWithFormat:placeholder, string];
+    
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:regexOptions error:&error];
+    if (error)
+    {
+        NSLog(@"Couldn't create regex with given string and options");
+    }
+    
+    return regex;
+}
+
+- (NSArray*)getAllfileNamesFromBundle{
+    NSString *path = [[NSBundle mainBundle] resourcePath];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    
+    NSError *error = nil;
+    
+    NSArray *directoryAndFileNames = [fm contentsOfDirectoryAtPath:path error:&error];
+    NSLog(@"%@",directoryAndFileNames);
+     return directoryAndFileNames;
 }
 
 - (void)makePlistIntoHomeDirectoryWithContent:(NSString*)content{
