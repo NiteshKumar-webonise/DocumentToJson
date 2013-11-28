@@ -42,10 +42,10 @@
      [allJson addObject:dict];
      }
     
-    NSString* searchString=@"game";
+    NSString* searchString=@"charged timeout";
     NSMutableArray* searchedFiles=[[NSMutableArray alloc]init];
     
-    
+    NSDate *start = [NSDate date];
     for(int i=0;i<[allJson count];i++){
        NSString *content= [[allJson objectAtIndex:i] valueForKey:@"description"];
        NSRange visibleTextRange=NSMakeRange(0, content.length);
@@ -57,7 +57,9 @@
             [searchedFiles addObject:[[allJson objectAtIndex:i] valueForKey:@"html"]];
         }
     }
-    
+    NSDate *methodFinish = [NSDate date];
+    NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:start];
+    NSLog(@"Execution Time: %f", executionTime);
     NSLog(@"Searched file names %@",searchedFiles);
      //NSString *jsonContent= [self getJsonFromDictionaryOrArray:youthTrack];
      //[self makePlistIntoHomeDirectoryWithContent:jsonContent];
