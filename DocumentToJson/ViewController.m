@@ -41,20 +41,23 @@
         dict =@{@"shareurl":@"",@"html":[allFiles objectAtIndex:i],@"description":data,@"fav":@false,@"rule":[allFiles objectAtIndex:i]};
         [allJson addObject:dict];
     }
-    NSString *jsonContent= [self getJsonFromDictionaryOrArray:allJson];
+        
+     NSDictionary *outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":allJson};
+        
+    //NSString *jsonContent= [self getJsonFromDictionaryOrArray:outerDictionary];
     //NSLog(@"%@",jsonContent);
     //[self writeIntoFileWithString:jsonContent];
-        NSDictionary *outerDictionary=[[NSDictionary alloc]init];
-        outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":jsonContent};
+        //NSDictionary *outerDictionary=[[NSDictionary alloc]init];
+        //outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":jsonContent};
         [youthTrack addObject:outerDictionary];
     }
-    
-    [self makePlistIntoHomeDirectoryWithContent:youthTrack];
+    NSString *jsonContent= [self getJsonFromDictionaryOrArray:youthTrack];
+    [self makePlistIntoHomeDirectoryWithContent:jsonContent];
 }
 
-- (void)makePlistIntoHomeDirectoryWithContent:(NSArray*)content{
+- (void)makePlistIntoHomeDirectoryWithContent:(NSString*)content{
     NSString *filePath=[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/myfile.plist"];
-    [content writeToFile:filePath atomically:YES];
+    [content writeToFile:filePath atomically:YES encoding:NSStringEncodingConversionAllowLossy error:nil];
 }
 
 - (void)didReceiveMemoryWarning
