@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+        });
+
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+<p>The goal is the vertical plane midway between the sidelines extending indefinitely above the inside of the uprights and the front edge of the crossbar
+    and in the same vertical plane as the inside edge of the end line. The top of the crossbar shall be 10 feet above the ground, measured from the base of
+    each upright to the top of the crossbar at the intersection or at each end of the crossbar perpendicular to the ground when a single pedestal is used.
+</p>
+
+    <div class="accordion-wrapper">
+        <div class="accordion-head ">
+            <span class="plus-icon"></span><span class="head-text">Crossbar Length</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The crossbar shall be 23 feet, four inches long.
+            </p>
+        </div>
+        <div class="accordion-head ">
+            <span class="plus-icon"></span><span class="head-text">Uprights</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The uprights shall be 23 feet, four inches apart inside to inside and each upright may not exceed four inches in width.
+                It is permissible to use college or professional fields with goal post uprights set at the width specified by their respective codes.
+                The uprights shall extend a minimum of 10 feet above the crossbar.
+            </p>
+        </div>
+        <div class="accordion-head ">
+            <span class="plus-icon"></span><span class="head-text">Goal posts</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The goal posts shall be padded with resilient, shock absorbing material to a height of at least six feet above the ground.
+            </p>
+        </div>
+        <div class="accordion-head ">
+            <span class="plus-icon"></span><span class="head-text">Color and Wind Directional Streamer</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The horizontal crossbar and the uprights above it shall be free from any decorative material except paint that is recommended to be either
+                silver, white or yellow in color. One wind directional streamer may be attached to the top of each upright. Wind directional streamers shall
+                be four inches in width, 42 inches in length and either red, orange or yellow in color.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

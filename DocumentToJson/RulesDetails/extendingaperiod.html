@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+        });
+        
+    </script>
+</head>
+<body>
+	<div class="content-wrapper ">
+		<p>
+			A period is extended for an untimed down when:
+        </p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. The penalty for a foul other than unsportsmanlike or
+					non-player that occurs during the last timed down of the period is
+					accepted;
+                </p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.The scoring team accepts enforcement on the succeeding
+					kickoff or from the succeeding spot for a foul other than
+					unsportsmanlike or non-player by its opponent during a
+					touchdown-scoring play in which there is no change of possession;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.There was a double foul;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d.There was an inadvertent whistle; or </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.
+				If a touchdown was scored, unless the touchdown is scored
+					during the last down of the fourth period and the point(s) would
+					not affect the outcome of the game or playoff qualifying.</p>
+
+		<div class="accordion-wrapper">
+			<div class="accordion-head">
+				<span class="plus-icon"></span><span class="head-text">Untimed Down</span>
+			</div>
+			<div class="accordion-content">
+				<p>If any instance in Rule 2-4-1a through e occurs during the
+					untimed down, the procedure is repeated.</p>
+			</div>
+
+		</div>
+        
+					<h4>
+				APPROVED RULINGS
+			</h4>
+		
+		<div class="accordion-wrapper">
+			<div class="accordion-head">
+				<span class="plus-icon"></span><span class="head-text">AR 2.4.A</span>
+			</div>
+			<div class="accordion-content">
+				<p>A1's run ends inbounds and there is a live-ball foul by
+					either team. The penalty is accepted. After enforcement, the clock
+					expires before A can snap the ball. RULING: The period will be
+					extended for an untimed down because the penalty for a foul that
+					occurred during the last timed down of the period was accepted.
+					That would be the case whether or not A had enough time to snap the
+					ball before the clock expired.</p>
+			</div>
+			<div class="accordion-head">
+				<span class="plus-icon"></span><span class="head-text">AR 2.4.B</span>
+			</div>
+			<div class="accordion-content">
+				<p>A1's run ends inbounds. After the play, there is a dead-ball
+					foul by either team. The penalty is accepted. After enforcement,
+					the clock expires before A can snap the ball. RULING: The period
+					will not be extended because the penalty was for a dead-ball foul.</p>
+			</div>
+			<div class="accordion-head">
+				<span class="plus-icon"></span><span class="head-text">AR 2.4.C</span>
+			</div>
+			<div class="accordion-content">
+				<p>A scores a touchdown to take a 12-7 lead. The touchdown
+					occurs as time expires in the (a) fourth or (b) third period.
+					RULING: In (a), the try will not be permitted unless the potential
+					point(s) is needed in a tie-breaker system for playoff
+					qualification. In (b), the try is attempted as part of the third
+					period.</p>
+			</div>
+			
+			
+		</div>
+
+
+	</div>
+</body>
+</html>

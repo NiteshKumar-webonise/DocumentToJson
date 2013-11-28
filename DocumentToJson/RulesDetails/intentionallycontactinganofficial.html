@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="colorbox.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function(){
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+        });
+
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+    <p>
+        No player or nonplayer shall intentionally contact an official.
+    </p>
+        <h3>
+            PENALTY
+        </h3>
+
+
+        <div class="icons">
+            <a href="#coach" class="coach-icon pop-up-link"> </a>
+
+            <div id="coach" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img src="http://signals.usafootball.com/uploads/catagory/image_2x/35/16.png" alt=""/>
+
+                    <div class="caption">
+                        <div class="rule-number">38</div>
+                        <div class="rule-name">Personal foul</div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <a href="#yds" class="coach-icon pop-up-link"> </a>
+
+            <div id="yds" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img
+                            src="http://signals.usafootball.com/uploads/catagory/image_2x/50/6.png"
+                            alt=""/>
+
+                    <div class="caption">
+                        <div class="rule-number">47</div>
+                        <div class="rule-name">Disqualification
+                        </div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="yds-fifteen-icon"></div>
+            <div class="clear"></div>
+            <p>Disqualification</p>
+    </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="colorbox.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+        });
+
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+<p>A down is action that starts with a legal snap (beginning a scrimmage down) or when the ball is kicked on a free kick (beginning a free-kick down).
+    A down ends when the ball next becomes dead. While the ball is live, an interval called a down is in progress and the team in possession attempts to
+    advance the ball by carrying, kicking or passing it. The team in possession has a series of four downs numbered 1, 2, 3 and 4 to advance the ball to
+    the line to gain.</p>
+
+<div class="accordion-wrapper">
+
+
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Force</span>
+    </div>
+    <div class="accordion-content">
+        <p>Force is the result of energy exerted by a player that provides movement of the ball.
+            The term force is used only in connection with the goal line and in only one direction, i.e., from the field of play into the end zone.</p>
+    </div>
+
+
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Forward progress</span>
+    </div>
+    <div class="accordion-content">
+        <p>Forward progress is the end of advancement of the ball in a runner&apos;s possession or the forward-most point of the ball when it is
+            fumbled out of bounds toward the opponent&apos;s goal and it determines the dead-ball spot. When an airborne player makes a catch, forward
+            progress is the furthest point of advancement after he possesses the ball if contacted by a defender.</p>
+    </div>
+
+
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Foul</span>
+    </div>
+    <div class="accordion-content">
+        <p>A foul is a rule infraction for which a penalty is prescribed.</p>
+    </div>
+
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Huddle</span>
+    </div>
+    <div class="accordion-content">
+        <p>A huddle is two or more players of the same team grouped together before a down.</p>
+    </div>
+
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Line to gain</span>
+    </div>
+    <div class="accordion-content">
+        <p>The line to gain is the yard line established when a new series (first down) is awarded.
+            Unless there is a penalty following the ready-for-play signal, the line to gain is 10 yards
+            in advance of the foremost point of the ball when placed for the first down of the series.
+            If the line to gain extends into the end zone, the goal line is the line to gain.</p>
+    </div>
+
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Line of Scrimmage</span>
+    </div>
+    <div class="accordion-content">
+        <p>The line of scrimmage for each team is a vertical plane through the point of the ball nearest the team&apos;s goal line.
+            It is determined when the ball is marked ready for play and remains until the next ready-for-play signal.</p>
+    </div>
+
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Neutral Zone</span>
+    </div>
+    <div class="accordion-content">
+        <p>The neutral zone is the space between the two free-kick lines during a free-kick down and between the two
+            scrimmage lines during a scrimmage down. For a free-kick down, the neutral zone is 10 yards wide and for a scrimmage
+            down it is as wide as the length of the football. It is established when the ball is marked ready for play. The neutral
+            zone may be expanded following the snap up to a maximum of two yards behind the defensive line of scrimmage, in the field of play,
+            during any scrimmage down.</p>
+    </div>
+
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Penalty</span>
+    </div>
+    <div class="accordion-content">
+        <p>A penalty is a result imposed by rule against a team or team member that has committed a foul.
+            Game situations that produce results somewhat similar to penalties but are not classified as fouls are disqualification
+            of a player, first touching of a kick by K and forfeiture of a game.</p>
+    </div>
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Scrimmage</span>
+    </div>
+    <div class="accordion-content">
+        <p>Scrimmage is the action of the two teams during a down that begins with a snap.</p>
+    </div>
+    <div class="accordion-head accordion-head1">
+        <span class="plus-icon"></span><span class="head-text">Shift</span>
+    </div>
+    <div class="accordion-content">
+        <p>A shift is the action of one or more offensive players who, after a huddle or after taking set positions, move to a
+            new set position before the ensuing snap.</p>
+    </div>
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Snap</span>
+    </div>
+    <div class="accordion-content">
+        <p> A snap is the legal act of passing or handing the ball backward from its position on the ground.
+            The snap begins when the snapper first moves the ball legally other than in adjustment. In a snap,
+            the movement must be a quick and continuous backward motion of the ball during which the ball immediately
+            leaves the hand(s) of the snapper and touches a back or the ground before it touches a team A lineman.
+            The snap ends when the ball touches the ground or any player.</p>
+    </div>
+
+    <div class="accordion-head">
+        <span class="plus-icon"></span><span class="head-text">Approved Ruling</span>
+    </div>
+    <div class="accordion-content">
+        <p>An approved ruling (AR) is an official decision on a given statement
+            of facts. It serves to illustrate the spirit and application of the rules.</p>
+    </div>
+
+
+</div>
+
+</div>
+</body>
+</html>

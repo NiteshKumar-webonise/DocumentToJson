@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+        <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+            $(".pop-up").hide();
+            $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+            $(".close-btn").click(function(){
+                $(".pop-up").hide();
+                $(".pop-up").removeClass("active");
+            });
+                          
+                         
+        });
+        
+    </script>
+    <title>xyz</title>
+</head>
+<body>
+<div class="content-wrapper">
+  <p>While any free kick is in flight in or beyond the neutral zone to the receiver's goal line or any scrimmage kick is in flight beyond the neutral zone to the receiver's goal line, K shall not touch the ball or R, unless blocked into the ball or R or to ward off a blocker, nor obstruct R's path to the ball. That prohibition applies even when no fair-catch signal is given, but it does not apply after a free kick has been touched by an R player or after a scrimmage kick has been touched by an R player who was clearly beyond the neutral zone at the time of touching.
+  </p>
+    
+    <div class="accordion-wrapper">
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Approved Touching</span>
+        </div>
+        <div class="accordion-content ">
+            <p>K may catch, touch, muff or bat a scrimmage kick in flight beyond the neutral zone if no player of R is in position to catch the ball.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Batting</span>
+        </div>
+        <div class="accordion-content ">
+            <p>A K player may bat toward his own goal line a grounded scrimmage kick that is beyond the neutral zone and may also bat a scrimmage kick in flight beyond the neutral zone if no R player is in position to catch the ball.</p>
+        </div>
+    </div>
+            <h4>PENALTY</h4>
+            <p>R may accept a 15-yard penalty from the previous spot and a replay of the down; accept the penalty of an awarded fair catch at the spot of the foul; or accept the results of the play.<a href="#link-popup" class="pop-up-link">(signal 33)</a></p>
+            <div id="link-popup" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img src="http://signals.usafootball.com/uploads/catagory/image_2x/46/2.png" alt="" />
+                    <div class="caption">
+                        <div class="rule-number">33</div>
+                        <div class="rule-name">False Start / Illegal Formation 5 Yards</div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="clear"></div>
+            
+            
+            
+        <h3>APPROVED RULINGS</h3>
+        <div class="accordion-wrapper">
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.13.A</span>
+        </div>
+        <div class="accordion-content ">
+            <p>A period or periods may be shortened or the game terminated by mutual agreement of the opposing coaches and the referee.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.13.B</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The ball is free kicked from K's 40-yard line and in flight it crosses the 50-yard line before a strong wind blows it back to K's 45, where it is touched in flight by K1 and is recovered by K2. RULING: Kick-catching interference.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.13.C</span>
+        </div>
+        <div class="accordion-content ">
+            <p>K2's punt is partially blocked by R1 in or behind the neutral zone and it then travels beyond the neutral zone. R2 is in position to catch the ball, but it first touches K2's shoulder before hitting the ground, where it is recovered by R2. RULING: Since R1's touching is ignored, it is kick-catching interference by K2, because R2 was in position to catch the ball.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.13.D</span>
+        </div>
+        <div class="accordion-content ">
+            <p>K1's punt is coming down over R's 15-yard line and (a) R2 is in position to catch the ball or (b) all R players have moved away from where the ball will land. In both (a) and (b) K3 catches the ball. RULING: In (a), it is kick-catching interference. R may choose the result of the play, may take the ball at the spot of first touching, take an awarded fair catch, accept a 15-yard penalty from the spot of the foul or accept a 15-yard penalty from the previous spot and replaying the down. If R chooses to take the result of the down, it would be R's ball where K3 caught it. In (b), the play is legal and the ball is dead as soon as K3 catches it. The spot of the catch is also a spot of first touching and R will put the ball in play on that-yard line, first-and-10.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.13.E</span>
+        </div>
+        <div class="accordion-content ">
+            <p>K5, running down field under a punt, has the kick strike him on his helmet (a) R1 is in a position to catch the kick if he so chooses or (b) no R player is in position to be able to get to the ball and catch it. RULING: In (a), K5 has committed kick-catching interference. In (b), there is no foul.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

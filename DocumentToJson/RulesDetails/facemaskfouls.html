@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="colorbox.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          $(".pop-up").hide();
+                           $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function(){
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+        });
+
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+    <p>
+        No player or nonplayer shall grasp an opponent&apos;s facemask or any edge of a helmet opening, including the
+        chin strap.
+
+
+    </p>
+
+        <h3>
+            PENALTY
+        </h3>
+
+       <!-- <p>15 yards. Signal 38. Disqualification also if any foul is flagrant. Signal 47.</p>
+
+        <p>If foul is by B, penalty includes an automatic first down. Signal 8.</p> -->
+
+        <div class="icons">
+            <a href="#coach" class="coach-icon pop-up-link"></a>
+
+            <div id="coach" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img src="http://signals.usafootball.com/uploads/catagory/image_2x/46/2.png" alt=""/>
+
+                    <div class="caption">
+                        <div class="rule-number">38</div>
+                        <div class="rule-name">Personal foul</div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <a href="#yds" class="coach-icon pop-up-link"> </a>
+
+            <div id="yds" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img src="http://signals.usafootball.com/uploads/catagory/image_2x/46/2.png"
+                         alt=""/>
+
+                    <div class="caption">
+                        <div class="rule-number">45</div>
+                        <div class="rule-name">grasping face mask or helmet opening
+                        </div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="yds-fifteen-icon"></div>
+            <div class="clear"></div>
+            <p>Disqualification also if flagrant.</p>
+            <div class="clear"></div>
+            <a href="#sds" class="coach-icon pop-up-link"> </a>
+
+            <div id="sds" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img
+                            src="http://signals.usafootball.com/uploads/catagory/image_2x/46/2.png"
+                            alt=""/>
+
+                    <div class="caption">
+                        <div class="rule-number">47</div>
+                        <div class="rule-name">Disqualification                        </div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="clear"></div>
+            <p>If foul is by B, penalty includes an automatic first down.</p>
+            <div class="clear"></div>
+            <a href="#gfd" class="coach-icon pop-up-link"> </a>
+
+            <div id="gfd" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img
+                            src="http://signals.usafootball.com/uploads/catagory/image_2x/46/2.png"
+                            alt=""/>
+
+                    <div class="caption">
+                        <div class="rule-number">8</div>
+                        <div class="rule-name">First down
+                        </div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+
+    <div class="clear"></div>
+        <h3>
+            APPROVED RULINGS
+        </h3>
+    <div class="accordion-wrapper">
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.14.A</span>
+        </div>
+        <div class="accordion-content">
+            <p>With second down and 5 yards to go from B&apos;s 30-yard line, A1 throws a pass to eligible A2.
+                Following the reception, A2 grasps B1&apos;s facemask/helmet opening/chin strap at B&apos;s 15-yard line
+                as B1
+                attempts to tackle A2, who scores a touchdown. RULING: If B accepts the penalty, the score is nullified.
+                Following the penalty enforcement, it will be A&apos;s ball First- and-10 at B&apos;s 30-yard line.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.14.B</span>
+        </div>
+        <div class="accordion-content">
+            <p>A1 is tackled by B1 who (a) grasps A1&apos;s facemask/helmet opening/chin strap momentarily and lets go,
+                (b) has his hand brush across A1&apos;s facemask or (c) pulls A1 to the ground by grasping A1&apos;s
+                facemask/
+                helmet opening. RULING: No foul in (b). It is a personal foul in (a) and (c).
+                The penalty is 15 yards and an automatic first down.
+
+
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.14.C</span>
+        </div>
+        <div class="accordion-content">
+            <p>As B5 attempts to tackle A6, he has his hand on the helmet but does not touch the facemask,
+                the chin strap or inside the helmet. RULING: No foul as B5 did not grasp the helmet opening, chin strap
+                or facemask.
+            </p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+<script src="jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          
+                         
+        });
+        
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>It is a legal forward pass if during a scrimmage down and before team possession has changed a player of A throws the ball
+        with both feet of the passer in or behind the neutral zone when the ball is released. Only one forward pass may be thrown during the down.</p>
+
+		<div class="accordion-wrapper">
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Conserving Time</span>
+			</div>
+			<div class="accordion-content">
+				<p>It is legal to conserve time by intentionally throwing the
+					ball forward to the ground immediately after receiving a direct
+					hand-to-hand snap.</p>
+            </div>
+		</div>
+		<h4>APPROVED RULINGS</h4>
+
+
+
+
+
+	<div class="accordion-wrapper">
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 5.3.A</span>
+		</div>
+		<div class="accordion-content ">
+			<p> With time expiring in the second or fourth period and A behind in the score, A1 intentionally throws the ball forward to the ground
+            in order to stop the clock. A1’s action took place immediately after receiving a direct hand-to-hand snap. RULING: The grounding is legal and the clock remains stopped until the subsequent snap.</p>
+		</div>
+
+
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 5.3.B</span>
+		</div>
+		<div class="accordion-content ">
+			<p>Quarterback A1 runs wide and while near the neutral zone decides to throw a forward pass. As A1 releases the ball his foremost
+            foot is touching the ground in the neutral zone. RULING: Legal forward pass. </p>
+		</div>
+
+
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 5.3.C</span>
+		</div>
+		<div class="accordion-content ">
+			<p>First-and-10 on A&apos;s 20. A1 throws a pass intended for A2, who is at A&apos;s 24-yard line. A2 cannot make the catch and the ball hits the ground at A&apos;s 26-yard line. A1&apos;s pass is (a) thrown with a one-handed underhanded motion, (b) pitched forward with both hands or (c) thrown with a conventional overhand motion. RULING: No foul in (a), (b) and (c). The rules do not require a forward pass to be thrown with an overhand motion. The pass is incomplete and is dead when it hits the ground.</p>
+		</div>
+
+
+
+
+	</div>
+	</div>
+</body>
+</html>

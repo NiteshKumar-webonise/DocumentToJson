@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function(){
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+
+                          
+                         
+        });
+        
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>No defensive player may be lined up over the snapper and on the
+			line of scrimmage if there is no player in position to take a
+			hand-to-hand snap. The restriction is not in effect if an offensive
+			player shifts to a position to take a hand-to-hand snap.</p>
+		<h4>PENALTY</h4>
+        <p>For the first violation by a team, the ball remains dead and a
+        warning is issued.</p>
+		<div class="icons">
+			<a href="#coach" class="coach-icon pop-up-link"> </a>
+            <div id="coach" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+                    src="http://signals.usafootball.com/uploads/catagory/image_hdpi/17/10.png"
+                    alt="" />
+					<div class="caption">
+						<div class="rule-number">21</div>
+						<div class="rule-name">Delay of game</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+			<div class="clear"></div> 
+        </div>
+            <p>Second violation</p>
+			
+
+            <div class="icons">
+                <a href="#coach" class="coach-icon pop-up-link"> </a>
+                
+                <div class="yds-icon"> </div>
+            </div>
+                <div class="clear"></div>
+                <p>Third and subsequent violations</p>
+                <div class="icons-label">
+                    <a href="#coach1" class="coach-icon pop-up-link"> </a>
+                    <div id="coach1" class="pop-up">
+                        <div class="pop-up-wrapper">
+                            <img
+                            src="http://signals.usafootball.com/uploads/catagory/image_2x/47/3.png"
+                            alt="" />
+                            <div class="caption">
+                                <div class="rule-number">27</div>
+                                <div class="rule-name">Unsportsmanlike conduct noncontact foul</div>
+                            </div>
+                            <div class="close-btn"></div>
+                        </div>
+                        <div class="overlay"></div>
+                        
+                    </div>
+                    <div class="yds-fifteen-icon"> </div>
+                    <div class="clear"></div>
+
+                </div>
+                
+                <h4>APPROVED RULINGS</h4>
+
+
+
+	<div class="accordion-wrapper">
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 4.4.A: (Non-junior
+				division)</span>
+		</div>
+		<div class="accordion-content ">
+			<p>B1 is head-up on snapper A2. A3 is (a) in position to take a
+				hand-to-hand snap from A2 or (b) is 5 yards deep in the backfield.
+				RULING: In (a), there is no foul. There is no restriction on team B
+				because A3 was in position to take a hand-to-hand snap. In (b), the
+				official should blow his whistle and prevent the snap. If it is team
+				B's first violation, a team warning is issued. If it is the second
+				violation, a 5-yard penalty is assessed. Subsequent violations
+				result in a 15-yard penalty.</p>
+		</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 4.4.B: (Non-junior
+					division)</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A1 is lined up 5 yards in his backfield. B2 is lined up in
+					the gap between snapper A3 and guard A4. A1 legally shifts to a
+					position to take a hand-to-hand snap, so B2 moves head-up on A3. A1
+					then legally moves back to his original position. RULING: Once A1
+					moves to a position to take a hand-to-hand snap, the restriction on
+					team B placing a player head-up on the snapper is eliminated for
+					that play. However, B2 is not excused for actions that could still
+					be ruled unnecessary roughness once the ball is snapped.</p>
+			</div>
+				<div class="accordion-head ">
+					<span class="plus-icon"></span><span class="head-text">AR 4.4.C: (Non-junior
+						division)</span>
+				</div>
+				<div class="accordion-content ">
+					<p>A1 is in position to take a hand-to-hand snap and B2 is
+						head-up on snapper A3. A1 legally shifts to a position 5 yards
+						behind the line. RULING: Because A1 was in a position to take a
+						hand-to-hand snap, the restriction on team B placing a player
+						head-up on the snapper is eliminated for that play. However, B2 is
+						not excused for actions that could still be ruled unnecessary
+						roughness once the ball is snapped.</p>
+				</div>
+					<div class="accordion-head ">
+						<span class="plus-icon"></span><span class="head-text">AR 4.4.D: (Junior
+							division)</span>
+					</div>
+					<div class="accordion-content ">
+						<p>B1 is head-up on snapper A2. A3 is (a) in position to take
+							a hand-to-hand snap from A2 or (b) is 5 yards deep in the
+							backfield. RULING: A team B player lined up over the snapper must
+							be at least 5 yards off his line regardless of A's formation. The
+							official should blow his whistle and prevent the snap. If it is
+							team B's first violation, a team warning is issued. If it is the
+							second violation, a 5-yard penalty is assessed. Subsequent
+							violations result in a 15-yard penalty.</p>
+					</div>
+
+
+
+                </div>
+
+
+				</div>
+</body>
+</html>

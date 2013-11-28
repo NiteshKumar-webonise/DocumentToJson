@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                         
+        });
+        
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>The game is played in four periods of 12 minutes each. Leagues/ Associations may adopt the length of quarters to be 8, 10 or 12 minutes. By adoption, timing of these quarters [starting and stopping the clock] may be in accordance with NFHS timing rules [NFHS 3-4, Articles 1-7]. Otherwise, USA Football rules 2.1.5 [Starting the Clock] and 2.1.6 [Stopping the Clock] are in effect.
+		</p>
+
+		<div class="accordion-wrapper">
+			<div class="accordion-head">
+				<span class="plus-icon">
+            </span><span class="head-text">Half Time</span>
+			</div>
+			<div class="accordion-content">
+				<p>The intermission between the second and third periods is 15
+					minutes unless altered by the league. After that intermission
+					expires, the game officials are responsible for ensuring that three
+					minutes are posted on the clock for players to warm up. The head
+					coach is responsible for his team being on the field for mandatory
+					warm-up time at the end of the halftime intermission.</p>
+			</div>
+			<div class="accordion-head">
+				<span class="plus-icon">
+            </span><span class="head-text">Intermission</span>
+			</div>
+			<div class="accordion-content">
+				<p>There shall be a one-minute intermission between both the
+					first and second and the third and fourth periods. The referee may
+					extend that intermission in cases of unusual heat or humidity that
+					may create a health risk to the players.</p>
+			</div>
+			<div class="accordion-head">
+				<span class="plus-icon">
+            </span><span class="head-text">Shortened Periods</span>
+			</div>
+			<div class="accordion-content">
+				<p>A period or periods may be shortened or the game terminated
+					by mutual agreement of the opposing coaches and the referee.</p>
+			</div>
+			<div class="accordion-head">
+				<span class="plus-icon">
+            </span><span class="head-text">Games Interrupted</span>
+			</div>
+			<div class="accordion-content">
+				<p>Games interrupted because of events beyond the control of the
+					league shall be continued from the point of interruption, unless
+					the teams agree to terminate the game with the existing score or as
+					otherwise provided by league adoption.</p>
+			</div>
+			<div class="accordion-head">
+				<span class="plus-icon">
+            </span><span class="head-text">Weather Conditions</span>
+			</div>
+			<div class="accordion-content">
+				<p>When weather conditions are construed to be hazardous to life
+					or limb of the participants, the crew of game officials is
+					authorized to delay or suspend the game.</p>
+			</div>
+			<div class="accordion-head">
+				<span class="plus-icon">
+            </span><span class="head-text">Weather Disturbances</span>
+			</div>
+			<div class="accordion-content">
+				<p>Guidelines on Handling Contests During Thunder and Lightning
+					Disturbances: The purpose of these guidelines is to provide a
+					default policy to those responsible for making decisions concerning
+					the suspension and restarting of contests based on the presence of
+					thunder and lightning. The preferred sources from which to request such a policy for
+					your facility would include your league/association and the nearest
+					office of the National Weather Service.</p>
+				<p>Proactive Planning:</p>
+					<ol>
+						<li>Assign staff to monitor local weather conditions before
+							and during events.</li>
+						<li>Develop an evacuation plan, including identification of
+							appropriate nearby shelters.</li>
+						<li>Develop criteria for suspension and resumption of play.<br />
+						<br /> a) When thunder is heard or a cloud-to-ground lightning
+							bolt is seen, the thunderstorm is close enough to strike your
+							location with lightning. Suspend play and take shelter
+							immediately.<br />
+						<br /> b) Thirty-Minute Rule: Once play has been suspended, wait
+							at least 30 minutes after the last thunder is heard or flash of
+							lightning is witnessed prior to resuming play.<br />
+						<br /> c) Any subsequent thunder or lightning after the beginning
+							of the 30-minute count, reset the clock and another 30-minute
+							count should begin.
+						</li>
+						<li>Hold periodic reviews with appropriate personnel.</li>
+					</ol>
+				
+				<p>For more detailed information, refer to the "Guidelines for
+					Lightning Safety" contained in the NFHS Sports Medicine Handbook.</p>
+			</div>
+			<div class="accordion-head">
+				<span class="plus-icon">
+            </span><span class="head-text">Time Remaining</span>
+			</div>
+			<div class="accordion-content">
+				<p>Approximately four minutes before the end of each half, the
+					referee shall notify the field captains and their coaches of the
+					time remaining. If an electric field clock is the official
+					timepiece, no notification is required.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="colorbox.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function(){
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+        });
+
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+    <p>
+      The runner may not grasp a teammate.
+    </p>
+    <div class="accordion-wrapper">
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">Defensive Player</span>
+        </div>
+        <div class="accordion-content">
+            <p> A defensive player shall not use his hands to add momentum to the charge of a teammate who is on the line of scrimmage;
+                use his hands or arms to hook, lock, clamp, grasp, encircle or hold in an effort to restrain an opponent other than the
+                runner; or contact an eligible receiver who is no longer a potential blocker.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">Blocker</span>
+        </div>
+        <div class="accordion-content">
+            <p>The blocker's hand(s) may not be locked nor may he swing, throw or flip the elbow or forearm so that it is moving faster
+                than the blocker's shoulders at the time the elbow, forearm or shoulder contacts the opponent. The blocker may not initiate
+                contact with his arm or hand against an opponent above the opponent&apos;s shoulder, but he may use his hand or arm to break a
+                fall or maintain his balance.
+            </p>
+        </div>
+    </div>
+        <h3>
+           PENALTY
+        </h3>
+
+        <div class="icons">
+
+            <a href="#coach" class="coach-icon pop-up-link"> </a>
+
+            <div id="coach" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img src="http://signals.usafootball.com/uploads/catagory/image_2x/39/20.png" alt=""/>
+
+                    <div class="caption">
+                        <div class="rule-number">42</div>
+                        <div class="rule-name">Holding/obstuction Illegal use of hands/arms</div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+             <div class="yds-ten-icon"></div>
+    </div>
+    <div class="clear"></div>
+        <h3>
+          APPROVED RULINGS
+        </h3>
+    <div class="accordion-wrapper">
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.7.A</span>
+        </div>
+        <div class="accordion-content">
+            <p> During a running play, blocker A1 has his hands cupped and together in front of his body with his
+                elbows outside his shoulders. As he approaches his opponent, he raises his hands and forearms perpendicular
+                to the ground to contact his opponent. RULING: If the blocker's palms are facing the opponent or if his forearms
+                are extended more than 45 degrees from his body, the hands must be open at and during contact.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.7.B</span>
+        </div>
+        <div class="accordion-content">
+            <p> Blocker A1 has his hands and arms in legal position with the elbows outside the body and (a)
+                when B1 attempts to penetrate his block in an upright position, he contacts B1 above the shoulders
+                with his forearm or as B2 ducks or submarines, A1 contacts him above the shoulder with his cupped hands.
+                RULING: In (a), it is an illegal blocking technique because contact was made above the defensive player&apos;s
+                shoulders while he was in a normal upright position. In (b), the responsibility for the contact on the head
+                of B2 is that of B2, because he has taken evasive action to avoid the block. It is assumed contact by A1 in
+                (b) does not violate the provision of striking or contacting above the shoulders.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.7.C</span>
+        </div>
+        <div class="accordion-content">
+            <p> In blocking B1, A1&apos;s forearms are almost fully extended from his body and he contacts
+                B1 with the side of his closed hands. The palms of A1&apos;s hands are not directly facing B1.
+                RULING: An illegal blocking technique by A1. The hands may not be closed or cupped when the arms are
+                extended more than 45 degrees from the blocker&apos;s body.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.7.D</span>
+        </div>
+        <div class="accordion-content">
+            <p>  A1 is blocking with open hands (a) outside his own frame or (b)
+                outside B1&apos;s frame during contact. RULING: A1 is using an illegal blocking technique in both (a) and (b).
+                When the hands are outside the frame, as described above and grasps the opponent or his equipment,
+                it is a holding foul instead of illegal use of hands.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.7.E</span>
+        </div>
+        <div class="accordion-content">
+            <p>  A1 makes legal contact on B1&apos;s chest using extended arms with open hands.
+                B1 spins in an effort to evade A1 and get to the passer. A1 effectively maintains
+                contact while shifting his hands to B1&apos;s upper arm and then directly on his back as B1 turns.
+                A1 continues the contact and finishes the block by forcing B1 beyond the passer.
+                RULING: The described blocking technique is legal. In order to legally contact the back of
+                the opponent in this situation it must either be a continuation of contact that was legal originally
+                or because the opponent turned so quickly the blocker could not stop his charge in time to avoid contact on the back.
+                When the extended-arms technique is used, the hands must be open on contact and remain open during the contact.
+                The open-hand blocking technique may be used in any situation where blocking is legal for A.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.7.F</span>
+        </div>
+        <div class="accordion-content">
+            <p>End A1 sprints from the line and then cuts sharply toward the middle of the field.
+                A1 makes no attempt to block defensive back B1. B1 pursues A1 and pushes him from the
+                side using his open hands. Contact  is made on A1&apos;s upper arm before the pass is thrown.
+                A1 was moving away from B1 when the contact occurred. RULING: Illegal use of hands by B1.
+                A defender may legally contact an eligible receiver beyond the neutral zone before the pass is in flight.
+                The contact may be a block or warding off the opponent who is attempting to block by pushing or pulling him.
+                However, if the receiver is not attempting to block or has gone past or is moving away, it is illegal for
+                the defender to use hands in the manner described. In this situation, it is clear that A1 is no longer a
+                potential blocker on B1.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.7.G</span>
+        </div>
+        <div class="accordion-content">
+            <p>  As the offensive linemen charge on the snap of the ball, B1 (a)
+                grasps guard A1 by the jersey and controls him until he sees where the ball is going,
+                (b) slaps A1 on the side of the helmet with an open hand and forces his head to the
+                side with what is commonly called the &quot;bell ringer,&quot; (b) contacts A1 with one hand on
+                his shoulder pad and the other hand on  his helmet in fighting off the block, (d) pulls A1&apos;s
+                shoulders to one side and charges through in an effort to get to the runner or (e) pulls A1&apos;s shoulders to
+                one side so B2 may charge through to the runner. RULING: It is holding in (a), that will result in a 10-yard penalty
+                administered in accordance with the all-but-one principle, if accepted. In (b), it is illegal personal contact and (e),
+                it is illegal use of hands by B1, that also carries a 10-yard penalty. The action by B1 in (c) and (d) is legal.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

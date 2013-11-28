@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          
+            $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function () {
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+                          
+                         
+        });
+        
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>Pass interference restrictions only apply beyond the neutral
+			zone and only if the legal forward pass, untouched by B in or behind
+			the neutral zone, crosses the neutral zone.</p>
+
+		<div class="accordion-wrapper">
+
+
+
+
+			<div class="accordion-head">
+				<span class="plus-icon"></span><span class="head-text">Restriction until
+					Opposing Player Touches Ball</span>
+			</div>
+			<div class="accordion-content">
+				<p>Pass interference restrictions are in effect for all A
+					players until the ball is touched by B or the pass is incomplete.</p>
+			</div>
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Ineligible Players</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Ineligible A players may not touch the pass but can use hands
+					or arms in a legal block to ward off an opponent.</p>
+			</div>
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Forward-Pass
+					Interference</span>
+			</div>
+			<div class="accordion-content ">
+				<p>It is forward-pass interference if any player of A who is
+					beyond the neutral zone interferes with an eligible opponent's
+					opportunity to move toward, catch or bat the pass; or if any A
+					player hinders an opponent's vision without making an attempt to
+					catch, intercept or bat the ball, even though no contact was made.</p>
+			</div>
+
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Not Forward-Pass
+					Interference</span>
+			</div>
+			<div class="accordion-content ">
+				<p>It is not forward-pass interference if unavoidable contact
+					occurs when two or more eligibles are making a simultaneous, bona
+					fide attempt to move toward, catch or bat the pass.</p>
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+
+		<h4>PENALTY</h4>
+		<div class="icons">
+			<a href="#coach" class="coach-icon pop-up-link"></a>
+			<div id="coach" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+						src="http://signals.usafootball.com/uploads/catagory/image_2x/30/11.png"
+						alt="" />
+					<div class="caption">
+						<div class="rule-number">33</div>
+						<div class="rule-name">Forward pass interference Kick catching interference</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+            <div class="yds-fifteen-icon"></div>
+			<div class="clear"></div>
+		</div>
+        
+        
+     <p>If the interference is intentional, A is penalized an additional 15 yards.</p>
+<div class="icons-label">
+<a href="#coach1" class="coach-icon pop-up-link"></a>
+<div id="coach1" class="pop-up">
+    <div class="pop-up-wrapper">
+        <img
+        src="http://signals.usafootball.com/uploads/catagory/image_2x/47/3.png"
+        alt="" />
+        <div class="caption">
+            <div class="rule-number">27</div>
+            <div class="rule-name">Unsportsmanlike conduct Noncontact foul</div>
+        </div>
+        <div class="close-btn"></div>
+    </div>
+    <div class="overlay"></div>
+</div>
+<div class="yds-fifteen-icon"></div>
+<div class="clear"></div>
+</div>
+		<h4>APPROVED RULINGS</h4>
+
+
+
+
+	<div class="accordion-wrapper">
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 5.11.A</span>
+		</div>
+		<div class="accordion-content ">
+			<p>A1 goes downfield and pushes off B2 (pushes him away from A1
+				to help him make his cut), cuts toward the sideline and catches A3's
+				pass. A1;s push occurred prior to B4 tipping the pass. RULING: Pass
+				interference on A1. Restrictions for A begin at the snap.</p>
+		</div>
+
+
+
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 5.11.B</span>
+		</div>
+		<div class="accordion-content ">
+			<p>Eligible receiver A1 blocks an opponent 10 yards downfield
+				while the pass is in flight. The pass is completed to A2, who is (a)
+				beyond or behind the neutral zone when he catches the ball. RULING:
+				It is a foul for pass interference in (a) and a legal block in (b).</p>
+		</div>
+
+
+
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 5.11.C</span>
+		</div>
+		<div class="accordion-content ">
+			<p>B3 gets in the path of receiver A4 without making contact.
+				B3's presence results in A4 initiating contact in an effort to reach
+				the ball. RULING: A foul by A4 for offensive pass interference.</p>
+		</div>
+
+
+
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 5.11.D</span>
+		</div>
+		<div class="accordion-content ">
+			<p>Before A1 throws a pass beyond the neutral zone, A2 contacts
+				lineman B1 on his line and drives him back four yards. RULING:
+				Offensive pass interference by A2 because he has driven B1 beyond
+				the expanded neutral zone.</p>
+		</div>
+
+
+
+
+
+	</div>
+    </div>
+</body>
+</html>

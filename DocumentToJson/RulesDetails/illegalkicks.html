@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+        <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          
+            $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function () {
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+                          
+                         
+        });
+        
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+  <p>An illegal kick is any intentional striking of the ball with the knee, lower leg or foot that does not qualify as a free kick or scrimmage kick. When the ball is loose following an illegal kick, it is treated as a fumble.
+  </p>
+    
+    <div class="accordion-wrapper">
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Intentional Kicks</span>
+        </div>
+        <div class="accordion-content ">
+            <p>No player shall intentionally kick the ball other than as a free or scrimmage kick. A player may not punt, drop kick or place kick after team possession has changed. Accidentally kicking a loose ball by a player in an unsuccessful attempt to secure possession is not illegal.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Choice of Team in Last Possession</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The team last in possession may choose to either put the ball in play where possession was lost or replay the down if, during a down or during a down in which the penalty for a foul is declined, an inadvertent whistle is
+            sounded while the ball is loose following an illegal kick. The penalty shall be administered as determined by the basic spot and takes precedence over inadvertent whistle administration if during a down a live-ball foul occurs prior to the inadvertent whistle and the penalty is accepted.</p>
+        </div>
+        </div>
+            <h4>PENALTY</h4>
+            <div class="icons">
+                <a href="#coach" class="coach-icon pop-up-link"></a>
+                <div id="coach" class="pop-up">
+                    <div class="pop-up-wrapper">
+                        <img src="http://signals.usafootball.com/uploads/catagory/image_2x/28/9.png" alt="" />
+                        <div class="caption">
+                            <div class="rule-number">31</div>
+                            <div class="rule-name">illegal batting/kicking (followed by pointing towards toe for kicking)</div>
+                        </div>
+                        <div class="close-btn"></div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+                <div class="yds-fifteen-icon"></div>
+                <div class="clear"></div>
+            </div>
+        <h3>APPROVED RULINGS</h3>
+        <div class="accordion-wrapper">
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.11.A </span>
+        </div>
+        <div class="accordion-content ">
+            <p>It is first down and 10 on A's three. Runner A1 fumbles on his 3-yard line. B1 intentionally kicks the loose ball that is (a) on A's 2 or (b) in the end zone. The ball then goes out of bounds behind the goal line. RULING: Undoubtedly, A will decline the penalty in (a) and take the touchback. A will accept the penalty for the illegal kick in (b), because declining it would give B a safety. Accepting the penalty results in a first down for A at its own 18.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.11.B</span>
+        </div>
+        <div class="accordion-content ">
+            <p>K1 kicks off to start the second half. The ball is rolling on R's 7-yard line when R1 (a) accidentally or (b) intentionally kicks the ball into his own end zone, where R2 recovers. Is the kick by R1 in either (a) or (b) a new force? If the action is a foul, where is it penalized from? RULING: It is not a new force in either (a) or (b), as force is not a consideration on kicks going into R's end zone. Even though the ball was kicked by R1, the kick had not ended. The contact in (a) is ignored, because it was not an intentional act.  In (b), the kick is illegal and if the penalty is accepted, it is enforced from the previous spot. If the foul is declined, it is a touchback by rule. In both (a) and (b), the ball becomes dead when the kick breaks the plane of R's goal line.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.11.C</span>
+        </div>
+        <div class="accordion-content ">
+            <p>It is fourth-and-10 for A from its own 15-yard line. A1 fakes a kick and runs beyond the neutral zone and kicks the ball at the 20. The kicked ball (a) is caught by A2 at A's 30 and he is downed there, (b) goes out of bounds at midfield or (c) comes to rest on K's 45 and no player of either team will touch it, so the covering official sounds his whistle. RULING: The kick is illegal and the resulting loose ball is treated as a fumble. The normal kicking rules and restrictions are not in effect during an illegal kick. In (a), (b) and (c), if the penalty for the illegal kick is declined, it will be A's ball first-and-10 from the yard line where the ball became dead. If the penalty is accepted, it is enforced from the end of the run that is the spot of the illegal kick.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.11.D</span>
+        </div>
+        <div class="accordion-content ">
+            <p>A is in scrimmage-kick formation and the ball is snapped to A1, who is the potential punter. A1 muffs the ball, allowing it to hit the ground, where he kicks it. RULING: Illegal kicking. If accepted, the penalty is 15 yards from the spot of the foul, because it is a foul by A behind the basic spot during a loose-ball play.</p>
+            
+        </div>
+       
+    </div>
+</div>
+</body>
+</html>

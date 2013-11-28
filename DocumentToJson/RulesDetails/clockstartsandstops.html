@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+        <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+                         
+        });
+        
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+  <p>The clock shall start when a free kick is touched, other than first touching by K. It is first touching if the ball is touched in the field of play by any K player before it crosses R's free-kick line and before it is touched there by any R player.
+  </p>
+    
+    <div class="accordion-wrapper">
+        <div class="accordion-head accordion-head1">
+           <span class="plus-icon"></span>
+            <span class="head-text">Score or Timeout</span>
+        </div>
+        <div class="accordion-content accordion-content1">
+            <p>At any point in the game, the game clock stops when either team scores, when either team takes a charged timeout or when there is any unusual delay.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">In the Last Two Minutes</span>
+        </div>
+        <div class="accordion-content ">
+            <p>In the last two minutes of either half, the game clock stops when the down ends following a foul, an official's or charged timeout occurs, the period ends, the ball is out of bounds, a touchback occurs, a is made or an inadvertent whistle is sounded.</p>
+        </div>
+     
+    </div>
+</div>
+</body>
+</html>

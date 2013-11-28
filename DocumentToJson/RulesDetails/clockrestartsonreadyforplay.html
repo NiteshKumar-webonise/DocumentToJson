@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+                          
+                         
+        });
+        
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>In the last two minutes of either half, the clock shall start
+			with the ready for play signal on a down beginning with a snap if the
+			clock was stopped for any reason other than because the ball went out
+			of bounds; B was awarded a new series; either team was awarded a new
+			series following a legal kick; the ball became dead behind the goal
+			line; a legal or illegal forward pass was incomplete; a request for a
+			charged timeout was granted; a period ends; a team attempted to
+			consume time illegally; the penalty for a delay of game foul was
+			accepted; if a period begins with a snap; when the ball was legally
+			snapped; or for an untimed down.</p>
+		<h4>APPROVED RULINGS</h4>
+	</div>
+	<div class="accordion-wrapper">
+		<div class="accordion-head">
+			<span class="plus-icon"></span><span class="head-text">AR 2.7.A</span>
+		</div>
+		<div class="accordion-content">
+			<p>A1's pass in the last two minutes of the second or fourth
+				period is intercepted by B2, but A accepts the penalty for B3's pass
+				interference. RULING: After enforcement of the penalty, the clock
+				starts on the referee's ready signal.</p>
+		</div>
+
+		<div class="accordion-head">
+			<span class="plus-icon"></span><span class="head-text">AR 2.7.B</span>
+		</div>
+		<div class="accordion-content">
+			<p>A1's run in the last two minutes of the second or fourth
+				period ends inbounds in advance of the line to gain. RULING: The
+				clock stops when the ball is ruled dead. Because the play ended
+				inbounds, the clock starts on the referee's ready signal.</p>
+		</div>
+
+
+
+	</div>
+
+</body>
+</html>

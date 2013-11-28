@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+        });
+
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>It is a double foul if both teams commit fouls, other than
+			unsportsmanlike or nonplayer, during the same live-ball period in
+			which:</p>
+		<ol class="lower-alpha">
+			<li>There is no change of team possession, unless all fouls
+				committed by R are post-scrimmage kick fouls; or</li>
+			<li>There is a change of team possession and the team in
+				possession at the end of the down fouls prior to final change of
+				possession unless all fouls committed by R are post-scrimmage kick
+				fouls; or</li>
+			<li>There is a change of possession and the team in final
+				possession accepts the penalty for its opponent&apos;s foul at any
+				time during the down.</li>
+		</ol>
+
+		<div class="accordion-wrapper">
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Captains
+					Not Consulted</span>
+			</div>
+			<div class="accordion-content ">
+				<p>In case of a double foul, the captains are not consulted
+					since the penalties offset. If there is a double foul, there is no
+					loss of distance.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Teams
+					Foul- no Post-Scrimmage Kick</span>
+			</div>
+			<div class="accordion-content ">
+				<p>If each team fouls during a down in which there is a change
+					of team possession and the play does not have a post-scrimmage kick
+					foul, the team last gaining possession has two options:</p>
+
+				<p>Option 1. Decline the penalty for the opponent&apos;s foul
+					other than a nonplayer or unsportsmanlike foul. In that case, the
+					team last gaining possession may retain the ball, but the team that
+					lost possession may accept the penalty for the opponent&apos;s
+					foul.</p>
+
+				<p>Option 2. Accept the penalty for the opponent&apos;s foul
+					other than a nonplayer or unsportsmanlike foul. In that case, the
+					penalties cancel and the down is replayed from the previous spot.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Teams
+					Foul- With Post-Scrimmage Kick</span>
+			</div>
+			<div class="accordion-content ">
+				<p>If each team fouls during a down in which there is a change
+					of team possession and R&apos;s penalty has post-scrimmage kick
+					enforcement, R has two options:</p>
+
+				<p>Option 1. Decline the penalty for K&apos;s foul other than a
+					nonplayer or unsportsmanlike foul. In that case, R may retain the
+					ball, but K may accept the penalty for R&apos;s foul.</p>
+
+				<p>Option 2. Accept the penalty for K&apos;s foul other than a
+					nonplayer or unsportsmanlike foul. In that case, the penalties
+					cancel and the down is replayed from the previous spot.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Multiple
+					Live-Ball Fouls</span>
+			</div>
+			<div class="accordion-content ">
+				<p>When two or more live-ball fouls (other than nonplayer or
+					unsportsmanlike) are committed during the same down by the same
+					team (multiple fouls), only one penalty may be enforced. The
+					offended captain may choose that one shall be administered or the
+					captain may decline all penalties. When a team commits a nonplayer
+					or unsportsmanlike foul during that same down, it is administered
+					from the succeeding spot as established by the acceptance or
+					declination of the penalty for the other foul.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Dead-Ball
+					Fouls</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Penalties for dead-ball fouls are administered separately and
+					in the order of their occurrence. A dead-ball foul is not coupled
+					with a live-ball foul or another dead-ball foul to create a double
+					or multiple foul.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Foul
+					During a Try</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A foul during a try is not paired with a dead-ball foul to
+					create a double or multiple foul.</p>
+			</div>
+		</div>
+		<h4>APPROVED RULINGS</h4>
+		<div class="accordion-wrapper">
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					9.11.A</span>
+			</div>
+			<div class="accordion-content ">
+				<p>During a forward-pass play in which the ball crosses the
+					neutral zone, ineligible A1 is illegally downfield and B2 is
+					flagged for interfering with eligible receiver A3. RULING: The
+					interference foul by B2 and A1&apos;s foul for being downfield
+					combine to make a double foul and the down will be replayed.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					9.11.B</span>
+			</div>
+			<div class="accordion-content ">
+				<p>B2 is flagged for pass interference. Thereafter, a fumble by
+					A1 is recovered by B2 who is downed after advancing nine yards.
+					While the ball was loose during the fumble, B3 held A3. RULING:
+					Double foul. Both fouls occurred before the change of team
+					possession. The penalties cancel and the down shall be replayed.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					9.11.C</span>
+			</div>
+			<div class="accordion-content ">
+				<p>First and 20 for A from its own 10-yard line. A1&apos;s legal
+					forward pass is complete to A2, who advances to A&apos;s 20-yard
+					line. Before the pass is thrown, B3 is flagged for holding. After
+					the pass, B4 is flagged for roughing the passer. RULING: That is a
+					multiple foul and A may accept either penalty or decline both and
+					take the results of the play. If either penalty is accepted, it is
+					enforced from the previous spot. The roughing penalty is 15 yards
+					and includes a first down for A. The holding penalty is 10 yards
+					and does not included a first down.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

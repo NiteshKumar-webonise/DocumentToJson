@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+        <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          
+            $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function () {
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+                          
+                         
+        });
+        
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+  <p>A fair catch is a catch by a receiver of a free kick in or beyond the neutral zone to the receiver's goal line or of a scrimmage kick beyond the neutral zone to the receiver's goal line after a valid signal under conditions in which the receiver forfeits his right to advance the ball in return for protection from being blocked or tackled by an opponent. It is a fair catch and the ball is dead if any receiver gives a valid fair-catch signal and he catches a free kick in or beyond the neutral zone to R's goal line or a scrimmage kick beyond the neutral zone to R's goal line.
+  </p>
+    
+    <div class="accordion-wrapper">
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Awarded Fair Catch</span>
+        </div>
+        <div class="accordion-content ">
+            <p>An awarded fair catch occurs when the offended team chooses to take the ball at the spot of the kick-catching interference rather than accepting the distance penalty from the previous spot and replaying the down.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Advancing a Dead ball</span>
+        </div>
+        <div class="accordion-content ">
+            <p>No R player may advance the ball after a valid or invalid fair-catch signal has been given by any member of R.</p>
+                <h4>Penalty</h4>
+                <div class="icons">
+                    <a href="#coach" class="coach-icon pop-up-link"></a>
+                    <div id="coach" class="pop-up">
+                        <div class="pop-up-wrapper">
+                            <img src="http://signals.usafootball.com/uploads/catagory/image_hdpi/17/10.png" alt="" />
+                            <div class="caption">
+                                <div class="rule-number">21</div>
+                                <div class="rule-name">delay of game</div>
+                            </div>
+                            <div class="close-btn"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="yds-icon pop-up-link"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Blocking After Fair-Catch Signal</span>
+        </div>
+        <div class="accordion-content ">
+            <p>A receiver who has given a valid or invalid fair-catch signal shall not block an opponent until the kick has ended.</p>
+                <h4>Penalty</h4>
+                <div class="icons">
+                    <a href="#coach1" class="coach-icon pop-up-link"></a>
+                    <div id="coach1" class="pop-up">
+                        <div class="pop-up-wrapper">
+                            <img src="http://signals.usafootball.com/uploads/catagory/image_2x/37/18.png" alt="" />
+                            <div class="caption">
+                                <div class="rule-number">40</div>
+                                <div class="rule-name">Blocking belown waist illegal block</div>
+                            </div>
+                            <div class="close-btn"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="yds-fifteen-icon"></div>
+                    <div class="clear"></div>
+                </div>
+                
+                <p>Disqualification also if any foul is flagrant.</p>
+                
+                    <div class="icons">
+                    <a href="#coach2" class="coach-icon pop-up-link"></a>
+                    <div id="coach2" class="pop-up">
+                        <div class="pop-up-wrapper">
+                            <img src="http://signals.usafootball.com/uploads/catagory/image_2x/50/6.png" alt="" />
+                            <div class="caption">
+                                <div class="rule-number">47</div>
+                                <div class="rule-name">Disqualification</div>
+                            </div>
+                            <div class="close-btn"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <h3>Approved Ruling</h3>
+                <p>AR 3.9.C: R1 and R2 both signal for a fair catch and (a) the punt is short and is caught by R3, (b) the punt is over the head of R1 and R2 blocks K1 who is attempting to down the ball near the goal line or (c) R2 muffs the punt that is then muffed by K2 and finally recovered by R1. RULING: R3 did not make a fair catch in (a) because he did not signal, but the ball became dead when it was caught. In (b), it is an illegal block because R2 blocked before the kick ended after giving a signal and the penalty, if accepted, will be administered from the post-scrimmage kick spot. In (c), the ball became dead as soon as R1 recovered.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Fair-Catch Signals</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The ball becomes dead following a valid or invalid fair-catch signal given by any member of the receiving team when a scrimmage kick is caught or recovered by any member of the receiving team behind, in or beyond the neutral zone.</p>
+            <p> Only a receiver who gives a valid signal is afforded protection. If, after  a receiver signals, the catch is made by a teammate, it is not a fair catch but the ball becomes dead.</p>
+            <p>Contacting a receiver who did not give a fair-catch signal or contacting a receiver who has given a signal but is contacted where he cannot make
+               a fair catch is not a foul for kick-catch interference but could be judged to be a personal foul. The receiver is not afforded special protection in such situations. Members of the kicking team have the responsibility for knowing when the ball is dead. If a K player could not have seen a fair-catch signal made by the teammate of the receiver, there is no foul. However, if he could have seen the signal, he does not have license to contact the receiver.</p>
+            <h3>Approved Rulings</h3>
+            <p>AR 3.9.D: K1 punts from midfield and R1 gives a fair-catch signal at R's 10-yard line. R1 muffs the catch and the ball bounces toward R's end zone. The ball is recovered at the 2-yard line by R2 and he is downed immediately. RULING: It is R's ball on the 2-yard line because the ball became dead when R2 recovered following the fair-catch signal.</p>
+            
+            <p>AR 3.9.E: K1's punt on fourth-and-10 is from his own 20-yard line. The kick is high and short. R1 gives a valid signal beyond the neutral zone and muffs the kick. The ball rebounds behind the neutral zone where (a) R2 falls on  the ball at K's 9-yard line or (b) R2 recovers the ball at K's 9-yard line and is tackled immediately. RULING: In (a), it is R's ball first-and-goal at K's 9-yard line. In (b), the signal by R1 causes the ball to become dead at the spot of recovery. The covering official should sound his whistle as soon as R2 or any other receiver recovers the ball.</p>
+            
+            <p>AR 3.9.F: R1 signals for a fair catch of a scrimmage kick by K1. Teammate R2 catches the kick and is tackled immediately by K1, who did or did not have a chance to see the signal. The contact, that was not a personal foul, occurred before the official sounded his whistle. R2 fumbles when tackled and the ball is recovered by K2. RULING: The ball became dead when it was caught by R2. The contact by K1 was not a foul because R2 did not signal for a fair catch. R2 fumbled a dead ball and there could be no recovery by K2.</p>
+            
+        </div>
+            
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Invalid, Illegal or Valid Fair-Catch Signals</span>
+        </div>
+        <div class="accordion-content ">
+            <p>A valid fair-catch signal is the extending and lateral waving of one arm at full arm's length above the head by any member of the receiving team.</p>
+            <p>An invalid fair-catch signal is any signal by a receiver before the kick is caught or recovered that does not meet the requirements of a valid signal; made after the kick has touched an R player; or made after the kick has touched the ground. An illegal fair-catch signal is any signal by a runner after the kick has been caught; or after the kick has been recovered.</p>
+                <h4>Penalty</h4>
+                <div class="icons">
+                    <a href="#coach3" class="coach-icon pop-up-link"></a>
+                    <div id="coach3" class="pop-up">
+                        <div class="pop-up-wrapper">
+                            <img src="http://signals.usafootball.com/uploads/catagory/image_2x/29/10.png" alt="" />
+                            <div class="caption">
+                                <div class="rule-number">32</div>
+                                <div class="rule-name">Invalid fair catch illegal fair catch signal</div>
+                            </div>
+                            <div class="close-btn"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="yds-icon pop-up-link"></div>
+                    <div class="clear"></div>
+                </div>
+                <h3>Approved Rulings</h3>
+                <p> AR 3.9.G: R1 gives a fair-catch signal (a) immediately following his catch of a kick or (b) after making a catch, then advancing a couple of steps. RULING: Illegal fair-catch signal in (a) and (b), because it was given after the kick was caught and R1 had become a runner. The signal does not cause the down to end. If accepted, the 5-yard penalty is enforced under the all-but-one principle.</p>
+                
+               <p>AR 3.9.H: During a scrimmage kick, R1 signals for a fair catch by (a) extending and holding one arm above his head, (b) partially extending and waving one hand in front of his face, (c) fully extending and laterally waving both hands above his head or (d) extending and laterally waving one arm  at full length above his head. RULING: The signals in (a), (b) and (c) are invalid. In (d), the signal is valid. Giving an invalid signal is a foul for that the penalty is enforced under the post-scrimmage kick provision.</p>
+                
+                <p> AR 3.9.I: R2 gives a fair-catch signal just after R1 begins to advance after catching a punt. RULING: No foul, as only the runner can give an illegal fair-catch signal. Opponents must continue to play and not be deceived by a player waving an arm after a kick-catching situation.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Resuming Play After a Fair Catch</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The team that next puts the ball in play by scrimmage following a fair catch is awarded a series of four consecutively numbered downs in which to advance the ball to the line to gain. Each awarded first down starts a new series of four downs unless R chooses a free kick after a fair catch or awarded fair catch.</p>
+            <p> The captain may choose to free kick or snap anywhere between the hash marks on the yard line through the spot of the catch when a fair catch is made or through the spot of interference, when a fair catch is awarded. These choices remain if a dead-ball foul occurs prior to the down or a foul or an inadvertent whistle occurs during the down and the down is replayed.</p>
+            <p> AR 3.9.J: With the score tied near the end of the fourth period, R1 signals for a fair catch and catches the kick at K's 40. After a timeout, the captain of R advises the referee that he wishes to put the ball in play by snap. RULING: That is permissible. In putting th'e ball in play in that situation, the captain of R is privileged to designate the point anywhere between the hash marks he wishes the ball to be placed.</p>
+            
+        </div>
+        <h3>APPROVED RULINGS</h3>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.9.A</span>
+        </div>
+        <div class="accordion-content ">
+            <p>K1 attempts an onside kick from his own 40 but instead of causing the ball to strike the ground and bounce he pops it up into the air. R1 signals for a fair catch while the kick is in flight and catches the ball (a) before it crosses R's free-kick line or (b) after it has gone beyond R's free- kick line. RULING: R1 has made a fair catch in both (a) and (b). A fair catch is permitted from in or beyond the neutral zone to R's goal line during a free kick.</p>
+        </div>
+        
+        
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.9.B</span>
+        </div>
+        <div class="accordion-content ">
+            <p>  During a scrimmage kick beyond the expanded neutral zone, R1 gives a fair-catch signal. He muffs the kick into the air, where (a) R1 catches it 5 yards in advance of his muff, (b) K2 pushes R1 in an attempt to reach the ball, (c) K3 tackles R1 following the muff, preventing R1 from catching the kick or (d) R1 is blocked below the waist by K4 and K5 recovers. RULING: In (a), R1 has made a fair catch and the ball will be put in play at the spot where the catch was completed. In (b), the contact on R1 by K2 is legal because K may retain possession following the muff by R1. In (c), it is a holding foul for K3 to tackle R1 following the muff, thus preventing him from reaching the ball. The block by K4 is illegal in (d). The fouls in (c) and
+            (d) are fouls during a loose-ball play and the penalty, if accepted, will be administered from the previous spot and the down replayed.</p>
+        </div>
+        
+        
+    </div>
+</div>
+</body>
+</html>

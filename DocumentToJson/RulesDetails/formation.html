@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+                          
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function(){
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+
+                         
+        });
+        
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>After the ball is ready for play, each player of A who
+			participated in the previous down and each substitute for A must have
+			been, momentarily, between the nine-yard marks before the snap.</p>
+
+		<div class="accordion-wrapper">
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Number of Players</span>
+			</div>
+			<div class="accordion-content ">
+				<p>At the snap, at least seven A players must be on their line
+					of scrimmage.</p>
+			</div>
+
+
+
+
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Players Next to the
+					Snapper</span>
+			</div>
+			<div class="accordion-content ">
+				<p>The players on each side of and next to the snapper may lock
+					legs with the snapper, but any other A lineman must have each foot
+					outside the closest foot of the player next to him at the snap. A's
+					players may stand, crouch or kneel.</p>
+			</div>
+
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Players Not on Line at
+					Snap</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Of the players of A who are not on their line at the snap
+					only one may penetrate the vertical plane through the waistline of
+					his nearest teammate who is on his line. He must have his hands in
+					position to receive the ball if it is snapped between the snapper's
+					legs but he is not required to receive the snap. Any other
+					player(s) must be in legal position as a back.</p>
+			</div>
+
+
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Eligible Receivers</span>
+			</div>
+			<div class="accordion-content ">
+				<p>All A players who, at the time of the snap, are on the ends
+					of their scrimmage line or legally behind the line are eligible
+					receivers.</p>
+			</div>
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Opposing Player Lineup</span>
+			</div>
+			<div class="accordion-content ">
+				<p>B players may be anywhere on or behind the line.</p>
+			</div>
+
+
+
+		</div>
+
+
+		<h4>PENALTY</h4>
+		<div class="icons">
+			<a href="#coach" class="coach-icon pop-up-link"> </a>
+			<div id="coach" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+						src="http://signals.usafootball.com/uploads/catagory/image_2x/16/9.png"
+						alt="" />
+					<div class="caption">
+						<div class="rule-number">19</div>
+						<div class="rule-name">False Start / Illegal Formation</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+			<div class="yds-icon pop-up-link"> </div>
+
+			<div class="clear"></div>
+		</div>
+
+		<h4>APPROVED RULINGS</h4>
+
+
+
+
+
+	<div class="accordion-wrapper">
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 4.3.A</span>
+		</div>
+		<div class="accordion-content ">
+			<p>A players assume their pre-snap positions. A1 takes a position
+				behind the line of scrimmage as a potential runner. A1 is standing
+				and is turned so he is directly facing the quarterback. At the snap,
+				A1's shoulder and elbow are breaking the plane through the waist of
+				his nearest teammate who is on the line. RULING: Since A1 is not on
+				the line and is not positioned as a back, it results in an illegal
+				formation foul. To be a back, A1 cannot have any part of his body
+				breaking the plane through the waist of his nearest teammate who is
+				on the line.</p>
+		</div>
+
+
+
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 4.3.B</span>
+		</div>
+		<div class="accordion-content ">
+			<p>Substitute A1, noticing his team has only 10 players on the
+				field, comes onto the field just as the ball is about to be snapped.
+				RULING: A1 must be on the field on A's side of the neutral zone,
+				inside the nine-yard marks and not violate the shift or motion
+				provisions. Furthermore, the act of his coming onto the field must
+				not deceive the defensive team.</p>
+		</div>
+
+
+
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 4.3.C</span>
+		</div>
+		<div class="accordion-content ">
+			<p>When A comes to the line of scrimmage, the linemen assume
+				their final positions such that five linemen penetrate the vertical
+				plane through the waistline of the snapper while the head of the
+				sixth penetrates the plane drawn through the waistline of the
+				nearest teammate who is on his line of scrimmage. RULING: It is an
+				illegal formation that is a foul simultaneously with the snap. The
+				offended team will be given the option of taking the result of the
+				play or accepting the penalty and replaying the down.</p>
+		</div>
+
+
+
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 4.3.D</span>
+		</div>
+		<div class="accordion-content ">
+			<p>Following the huddle, after A comes to its line of scrimmage,
+				quarterback A1 is breaking the plane of the waistline of the snapper
+				and slot back A2 has a part of his body breaking the plane of the
+				waistline of his nearest teammate who is on the line of scrimmage.
+				RULING: Illegal formation foul at the snap. While quarterback A1 may
+				be breaking the plane of the waistline of the snapper or nearest
+				teammate legally on the line of scrimmage, it is illegal for any
+				other back to break the plane of the waistline of his nearest
+				teammate who is on the line of scrimmage.</p>
+		</div>
+
+
+
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 4.3.E</span>
+		</div>
+		<div class="accordion-content ">
+			<p>At the snap, A1 is in a position that is neither on the line
+				of scrimmage nor clearly in the backfield. A1 is not on the line
+				because neither his head nor his foot is breaking the plane through
+				the waist of the snapper and he is not a back because he is
+				penetrating the plane through the waist of his nearest teammate, end
+				A2, who is on the line. The position of A1 is inside that of end A2,
+				who is clearly on the line of scrimmage. When the ball is snapped,
+				both A1 and A2 go downfield and A1 catches a pass. RULING: The
+				position of A1 is illegal when the ball is snapped. A1 is an
+				ineligible receiver because he was not clearly a back. His advance
+				beyond the neutral zone is illegal and when he touches the pass, it
+				is illegal touching. That is a multiple foul and B has a choice of
+				that penalty to accept.</p>
+		</div>
+
+		<div class="accordion-head ">
+			<span class="plus-icon"></span><span class="head-text">AR 4.3.F</span>
+		</div>
+		<div class="accordion-content ">
+			<p>In the last few seconds of a half, A1 completes a pass to A2
+				at B's 20-yard line. The ball is properly spotted and the referee
+				marks it ready for play and signals the clock to start. In the rush
+				and confusion to stop the clock, A's snapper and quarterback A1 are
+				the only A players in legal position when the ball is snapped and
+				legally "spiked" by A1. RULING: A foul for illegal formation occurs
+				at the snap. The "spike" is legal. Since the spike is legal, the
+				only applicable foul is for illegal formation.</p>
+		</div>
+
+	</div>
+
+
+	</div>
+</body>
+</html>

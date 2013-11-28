@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function () {
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+
+
+        });
+
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>-yard line markers, constructed of soft, pliable materials, if
+			placed on the ground, should be no closer than 5 yards to the
+			sideline.</p>
+
+		<div class="accordion-wrapper">
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Marking
+					Material</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Lines shall be marked with a noncaustic, nontoxic material
+					designed for marking fields such as powdered gypsum, calcium
+					carbonate and liquid aerosol paint. It is recommended that the
+					lines be white. Neither lime, hydrated lime or other chemical
+					derivatives of lime, nor caustic material of any kind may be used
+					for marking football fields.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Yard
+					Lines</span>
+			</div>
+			<div class="accordion-content ">
+				<p>-yard lines shall be marked with a continuous line every 5
+					yards beginning and ending four inches from each sideline. Game
+					administration may place on the field of play, four inches from
+					each sideline,-yard line extensions that should be 24 inches in
+					length and four inches in width.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Endlines</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Endlines and sidelines shall be continuous lines at least
+					four inches wide. All other field dimension lines should be marked
+					four inches in width.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Restraining
+					Line Rules</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A restraining line is a line placed around the outside of the
+					field. No person, including but not limited to, spectators, game
+					administrators or members of the media, shall be allowed within the
+					restraining line. A maximum of three coaches may be in the
+					restricted area. No player, non- player or coach shall be in the
+					restricted area when the ball is live.</p>
+				<h3>Penalty</h3>
+				<!-- Signals 7 and 29. Second
+					offense &minus; 5 yards. Signals 7 and 29. Each subsequent offense
+					&minus; 15 yards. Signals 7, 29 and 27.</p> -->
+				<div class="icons">
+                    <p>First offense &minus; warning.</p>
+					<a href="#coach" class="coach-icon pop-up-link"> </a>
+					<div id="coach" class="pop-up">
+						<div class="pop-up-wrapper">
+							<img
+								src="http://signals.usafootball.com/uploads/catagory/image_2x/8/1.png"
+								alt="" />
+
+							<div class="caption">
+								<div class="rule-number">7</div>
+								<div class="rule-name">Dead ball foul, touchback (move
+									side to side)</div>
+							</div>
+							<div class="close-btn"></div>
+						</div>
+						<div class="overlay"></div>
+					</div>
+					<a href="#coach1" class="coach-icon pop-up-link"> </a>
+					<div id="coach1" class="pop-up">
+						<div class="pop-up-wrapper">
+							<img
+								src="http://signals.usafootball.com/uploads/catagory/image_2x/26/7.png"
+								alt="" />
+
+							<div class="caption">
+								<div class="rule-number">29</div>
+								<div class="rule-name">Sideline interference (face press
+									box)</div>
+							</div>
+							<div class="close-btn"></div>
+						</div>
+						<div class="overlay"></div>
+					</div>
+                    <div class="clear"></div>
+                    <p>Second offense</p>
+                    <a href="#coach" class="coach-icon pop-up-link"> </a>
+                    
+					<div id="coach" class="pop-up">
+						<div class="pop-up-wrapper">
+							<img
+                            src="http://signals.usafootball.com/uploads/catagory/image_2x/8/1.png"
+                            alt="" />
+                            
+							<div class="caption">
+								<div class="rule-number">7</div>
+								<div class="rule-name">Dead ball foul, touchback (move
+									side to side)</div>
+							</div>
+							<div class="close-btn"></div>
+						</div>
+						<div class="overlay"></div>
+					</div>
+					<a href="#coach1" class="coach-icon pop-up-link"> </a>
+					<div id="coach1" class="pop-up">
+						<div class="pop-up-wrapper">
+							<img
+                            src="http://signals.usafootball.com/uploads/catagory/image_2x/26/7.png"
+                            alt="" />
+                            
+							<div class="caption">
+								<div class="rule-number">29</div>
+								<div class="rule-name">Sideline interference (face press
+									box)</div>
+							</div>
+							<div class="close-btn"></div>
+						</div>
+						<div class="overlay"></div>
+					</div>
+                    <div class="yds-icon"></div>
+                    <div class="clear"></div>
+                    <p>Each subsequent offence</p>
+                    <div class="clear"></div>
+                    <a href="#coach" class="coach-icon pop-up-link"> </a>
+                    
+					<div id="coach" class="pop-up">
+						<div class="pop-up-wrapper">
+							<img
+                            src="http://signals.usafootball.com/uploads/catagory/image_2x/8/1.png"
+                            alt="" />
+                            
+							<div class="caption">
+								<div class="rule-number">7</div>
+								<div class="rule-name">Dead ball foul, touchback (move
+									side to side)</div>
+							</div>
+							<div class="close-btn"></div>
+						</div>
+						<div class="overlay"></div>
+					</div>
+					<a href="#coach1" class="coach-icon pop-up-link"> </a>
+					<div id="coach1" class="pop-up">
+						<div class="pop-up-wrapper">
+							<img
+                            src="http://signals.usafootball.com/uploads/catagory/image_2x/26/7.png"
+                            alt="" />
+                            
+							<div class="caption">
+								<div class="rule-number">29</div>
+								<div class="rule-name">Sideline interference (face press
+									box)</div>
+							</div>
+							<div class="close-btn"></div>
+						</div>
+						<div class="overlay"></div>
+					</div>
+
+					<a href="#coach2" class="coach-icon pop-up-link"> </a>
+					<div id="coach2" class="pop-up">
+						<div class="pop-up-wrapper">
+							<img
+								src="http://signals.usafootball.com/uploads/catagory/image_2x/47/3.png"
+								alt="" />
+
+							<div class="caption">
+								<div class="rule-number">27</div>
+								<div class="rule-name">Unsportsmanlike conduct nonconduct
+									foul</div>
+							</div>
+							<div class="close-btn"></div>
+						</div>
+						<div class="overlay"></div>
+					</div>
+					<div class="yds-fifteen-icon"></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Restraining
+					Line Markings</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A four-inch-wide restraining line shall be placed around the
+					outside of the field, at least two yards from the sidelines and end
+					lines, as an extension of the line limiting the team box area,
+					except in stadiums where the total playing enclosure does not
+					permit. It is recommended that the restraining line be marked by
+					placing 12-inch long lines, separated by 24-inch intervals. Game
+					administration may place four-inch wide and 12-inch long bisecting
+					marks along the restraining line at each 5-yard line between the
+					goal lines.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Hash
+					Marks</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A series of hash marks should be 24 inches in length and four
+					inches in width and shall be located 53 feet, four inches from and
+					parallel with each sideline dividing the field of play
+					longitudinally in thirds. The hash marks shall be marked so that
+					each 5-yard marker bisects the hash mark. Game administration may
+					place on the field of play, at the hash marks, yard line extensions
+					that should be 24 inches in length and four inches in width. It is
+					permissible to use college or professional fields with hash marks
+					marked at the distance specified by their respective codes.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Yard
+					Marks</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Nine-yard marks, 12 inches in length and four inches in
+					width, shall be located nine yards from each sideline. The
+					nine-yard marks shall be marked so that at least each successive
+					10-yard marker bisects the nine-yard marks. The marks shall not be
+					required if the field of play is visibly numbered. If on-the-field
+					numbers are used, the tops of those numbers shall be nine yards
+					from the sideline, should be six feet in height and four feet in
+					width and may include directional arrows next to the yard line
+					numbers indicating the direction toward the nearest goal line.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Team
+					Boxes</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Team boxes shall be marked on each side of the field outside
+					the coaches' area between the 25-yard lines for use of coaches,
+					substitutes, trainers, etc., affiliated with the team. The coaches'
+					area is a minimum of a two-yard belt between the front of the team
+					box and the sideline. It is permissible for both team boxes to be
+					on the same side of the field, provided each team box is marked
+					between respective 20- and 45-yard lines. It is recommended goal
+					lines and the team box boundaries be marked in a color that
+					contrasts with other field markings and the area between the
+					sidelines and the team box boundaries be solid white or marked with
+					diagonal lines.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Decorative
+					Markings</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Decorative markings in the end zones shall be no closer than
+					two feet to the boundary and the goal lines. Advertising and/or
+					commercial markings on the field of play are prohibited.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Measurements</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Measurements shall be from the inside edges of the boundary
+					marks, such marks being out of bounds.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Goal
+					Line Mark</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Each goal line mark shall be entirely in its end zone so the
+					edge toward the field of play and its vertical plane is the actual
+					goal line. The goal line shall extend from sideline to sideline.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Center
+					Field Line</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A line, four inches wide and a minimum of 24 inches in
+					length, shall be centered in the field of play, three yards from
+					each goal line.</p>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+</html>

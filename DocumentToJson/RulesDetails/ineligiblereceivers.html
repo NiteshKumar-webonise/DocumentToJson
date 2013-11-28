@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          
+            $(".pop-up").hide();
+                         $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function () {
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+                          
+                         
+        });
+        
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>All A players who are not on the ends of their scrimmage line
+			or legally behind the line are ineligible receivers. Ineligible A
+			players may not advance beyond the expanded neutral zone on a legal
+			forward pass play before a legal forward pass that crosses the
+			neutral zone is in flight. If B touches the pass in or behind the
+			neutral zone, this restriction is terminated. An ineligible is not
+			illegally downfield if, at the snap, he immediately contacts a B
+			lineman and the contact does not continue beyond the expanded neutral
+			zone.</p>
+		<h4>PENALTY</h4>
+		<div class="icons">
+			<a href="#coach" class="coach-icon pop-up-link"></a>
+			<div id="coach" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+						src="http://signals.usafootball.com/uploads/catagory/image_2x/34/15.png"
+						alt="" />
+					<div class="caption">
+						<div class="rule-number">37</div>
+						<div class="rule-name">Ineligible Downfield</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+            <div class="yds-icon pop-up-link"></div>
+            <div class="clear"></div>
+		</div>
+
+
+
+         <h4>APPROVED RULINGS</h4>
+
+		<div class="accordion-wrapper">
+
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 5.9.A</span>
+			</div>
+			<div class="accordion-content ">
+				<p>B1 is on his defensive line of scrimmage when he is contacted
+					by ineligible lineman A1 and driven back about two yards. RULING:
+					A1 is not illegally downfield if a forward pass crosses the neutral
+					zone, since he contacted B1 on the line and after driving him back
+					did not go beyond the neutral zone expanded.</p>
+			</div>
+
+
+
+
+
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 5.9.B</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A1 drops back and throws a screen pass to flanker A2, who is
+					behind the neutral zone. B2 has come across the line and deflects
+					the pass so that its flight is altered and the pass goes beyond the
+					neutral zone. Ineligible A8 has gone beyond the expanded neutral
+					zone before the pass is released. RULING: Since B has touched the
+					forward pass in or behind the neutral zone, there is no foul for an
+					ineligible downfield.</p>
+			</div>
+
+
+
+
+
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 5.9.C</span>
+			</div>
+			<div class="accordion-content ">
+				<p>At the snap, interior lineman A1 moves about three yards
+					downfield and finding no one to block, retreats behind the neutral
+					zone and blocks for A2, who eventually throws a forward pass that
+					crosses the neutral zone. RULING: A1 is an ineligible illegally
+					downfield. The prohibition against ineligibles downfield for A
+					starts at the snap and the fact A1 was no longer downfield when the
+					pass was thrown has no bearing on the ruling.</p>
+			</div>
+
+
+
+
+
+
+
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 5.9.D</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Eligible receiver A1 is running a sideline route when he
+					intentionally steps out of bounds at A's 30-yard line. A1 returns
+					inbounds and catches or touches a forward pass from A2, (b) cannot
+					catch a forward pass because of interference by B3 or (c)
+					interferes with B3 so he cannot intercept the pass. RULING:
+					Stepping out of bounds means A1 is guilty of illegal participation,
+					a 15-yard penalty enforced from the previous spot. He is not an
+					ineligible illegally downfield. In (a), when he catches or touches
+					the pass, he is also guilty of illegal touching. In (b), the
+					interference by B3 creates a double foul; the penalties cancel and
+					the down is replayed. In (c), A1 is also guilty of offensive pass
+					interference.</p>
+			</div>
+
+
+
+
+		</div>
+        
+    </div>
+</body>
+</html>

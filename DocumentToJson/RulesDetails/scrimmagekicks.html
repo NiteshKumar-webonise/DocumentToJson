@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+        <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          
+            $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function () {
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+                          
+                         
+        });
+        
+    </script>
+        <script type="text/javascript">
+            function popup(msg) {
+                alert(msg);
+            }
+            </script>
+</head>
+<body>
+<div class="content-wrapper">
+  <p>A scrimmage kick is any legal kick from in or behind the neutral zone. Either a place kick, punt or drop kick may be used. For a place kick, the ball must be controlled on the ground or on a legal kicking tee/block by a teammate. The kick must be made before team possession has changed.
+  </p>
+    
+    <div class="accordion-wrapper">
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Ball Becomes Live</span>
+        </div>
+        <div class="accordion-content ">
+            <p>A ball becomes live when the ball has been legally snapped and a down is in progress. After being put in play, the ball remains live until the down ends.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Ball Becomes Dead</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The ball becomes dead and the down is ended when K catches or recovers a scrimmage kick beyond the neutral zone; when K is first (i.e., before any touching by R) to touch a scrimmage kick after it has come to rest beyond the neutral zone and between the goal lines; when a touchback occurs; or when an official sounds his whistle inadvertently.</p>
+            
+           <p>The down shall be replayed if during a down or during a down in which the penalty for a foul is declined, an inadvertent whistle is sounded during
+            a legal kick. The team last in possession may choose to either put the ball
+        
+            in play where possession was lost or replay the down if, during a down or during a down in which the penalty for a foul is declined an inadvertent whistle is sounded while the ball is loose following an illegal kick.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Batting a Scrimmage Kick</span>
+        </div>
+        <div class="accordion-content ">
+            <p>No player shall bat a scrimmage kick, except a low scrimmage kick in
+            flight that he is attempting to block. Additionally, a K player may:</p>
+            <ol class="lower-alpha">
+            <li>Bat toward his own goal line a grounded scrimmage kick that is
+            beyond the neutral zone; or </li>
+            <li>Bat a scrimmage kick in flight beyond the neutral zone if no R
+            player is in position to catch the ball.</li>
+            </ol>
+            
+            <h3>APPROVED RULING</h3>
+            <p>AR 3.8.A: With fourth-and-4 from R's 40-yard line, K1 punts. The kick is bounding near R's goal line and K2, in an attempt to keep it from penetrating the plane of the goal line, bats the ball at the 2-yard line back toward his own goal line. RULING: The bat by K2 is legal because it occurred beyond the neutral zone.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Catch or Recovery by K</span>
+        </div>
+        <div class="accordion-content ">
+            <p>Any K player may catch or recover a scrimmage kick while it is in or behind the neutral zone and advance, unless it is during a try.
+            </p><p>Any K player may catch or recover a scrimmage kick while it is beyond the neutral zone or the expanded neutral zone, provided such kick has been touched by a receiver who was clearly beyond the neutral zone at the time of touching.</p>
+            
+            <h3>APPROVED RULINGS</h3>
+            <p>AR 3.8.B: Fourth-and-10 on K's 45-yard line. K1 punts the ball beyond  the neutral zone. R1 muffs the ball back behind the neutral zone where K1 recovers and (a) falls on the ball at K's 40-yard line, (b) throws a forward
+                pass to K3 that is complete at the 50-yard line and R1 interferes with K3 or
+            (c) K1 punts the ball and R1 fair catches at his 30-yard line.
+            RULING: Since R1 touched the kick beyond the neutral zone, it will be first down for the team in possession in (a), (b) and (c). In (a), it is a first down for K at K's 40-yard line. In (b), the pass is legal as there had been no change  of team possession. If K accepts the penalty for interference, it will be K's ball at R's 40-yard line. In (c), the second punt is legal as there had been no change of team possession. The ball belongs to R first-and-10 on its own
+             30-yard line.</p>
+            
+            <p>AR 3.8.C: K2's punt is high and a strong wind blows it back toward the neutral zone. R1 gives a valid signal while he is beyond the neutral zone. However, the ball comes down (a) in or (b) behind the neutral zone. K2 pushes R1, then catches the kick and advances. RULING: Since K may catch or recover a scrimmage kick in or behind the neutral zone and advance, the action in (a) and (b) is legal. Since R may not fair catch in or behind the neutral zone, he may be legally contacted there.</p>
+            
+            <p>AR 3.8.D: A scrimmage kick by K1 is partially blocked in the neutral zone by R1. The kick goes beyond the neutral zone, where R2 muffs it back behind the neutral zone. K2 recovers behind the neutral zone and advances across R's goal line. RULING: Touchdown for K. The right of K
+             to advance this recovered scrimmage kick depends entirely upon whether the kick is recovered in, behind or beyond the neutral zone. Whether the kick went beyond the neutral zone and then rebounded behind it is of no consequence. The spot of recovery is the only factor. If the recovery is in or behind the neutral zone, K may advance. If the recovery is beyond the neutral zone, K may recover but may not advance.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Catch or Recovery by R</span>
+        </div>
+        <div class="accordion-content ">
+            <p>Any R player may catch or recover a scrimmage kick in the field of play and advance unless it is during a try or unless any member of the receiving team has given a valid or invalid fair-catch signal. R may catch or recover a scrimmage kick in K's end zone.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Fouls During Scrimmage Kick Plays</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The basic spot is the previous spot for fouls by K that occur between the snap and the end of a scrimmage kick and between a free kick and the end of a free kick. Post-scrimmage kick penalty enforcement (PSK) is used after a foul by R when the foul occurs during scrimmage kick plays other than a try or successful field goal; during a scrimmage kick play in which the ball crosses the expanded neutral zone; the foul occurs beyond the expanded neutral zone; before the end of a kick; and K will not be next to put the ball in play.</p>
+            <p>PSK fouls are enforced from the basic spot. The basic spot is a point of reference for penalty enforcement. It is the previous spot for a loose-  ball play unless the only accepted fouls meet the requirements of a post- scrimmage kick foul.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Forced Touching</span>
+        </div>
+        <div class="accordion-content ">
+            <p>Touching of a scrimmage kick by R is ignored if it is caused by K pushing or blocking R into contact with the ball or it is caused by K legally batting or muffing the ball into R. A catch or recovery by K beyond the neutral zone causes the ball to become dead. Touching of a scrimmage kick by K is ignored if it is caused by R pushing or blocking K into contact with the ball.</p>
+            
+            <h3>APPROVED RULING</h3>
+            <p>AR 3.8.H: K1 punts the ball from K's 40-yard line. While R1 and K1 are engaged in blocking downfield at R's 30-yard line, K2 legally bats the ball at R's 28-yard line and the batted ball touches R1 on the leg. Then, K3 recovers the ball at the 30-yard line. RULING: That touching by R is ignored and R will have the choice of taking the ball at the spot of first touching or the dead-ball spot.</p>
+        </div>
+        
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Formation</span>
+        </div>
+        <div class="accordion-content ">
+            <p>At the snap, at least seven K players shall be on their line of scrimmage. A scrimmage-kick formation is a formation with at least one player seven yards or more behind the neutral zone and in position to receive the long snap. No player may be in position to receive a hand-to- hand snap from between the snapper's legs.</p>
+            <p>The players on each side of and next to the snapper may lock legs with the snapper, but any other A lineman must have each foot outside the closest foot of the player next to him at the snap. A's players may stand, crouch or kneel.</p>
+        </div>
+        
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Neutral Zone</span>
+        </div>
+        <div class="accordion-content ">
+            <p>The neutral zone is the space between the two scrimmage lines during a scrimmage down. The neutral zone may be expanded following the snap up to a maximum of two yards behind the defensive line of scrimmage in the field of play during any scrimmage down. The neutral zone shall not be expanded into the end zone.</p>
+            <p>Low scrimmage kicks may touch or be touched by players of K or R and such touching is ignored if the kick has not been beyond the expanded neutral zone. The zone disintegrates immediately when the kick has crossed the expanded zone or when the trajectory is such that it cannot be touched until it comes down. If touched by R beyond the neutral zone, it establishes a new series.</p>
+        </div>
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Resuming Play After a Scrimmage Kick</span>
+        </div>
+        <div class="accordion-content ">
+            <p>A new series is awarded to the team in possession at the end of the down if R is the first to touch a scrimmage kick while it is beyond the expanded neutral zone, unless the penalty is accepted for a non-post- scrimmage kick foul that occurred before the kick ended.</p>
+            <p> A new series is awarded to R at the spot of first touching by K if any K player is first to touch the kicked ball beyond the expanded neutral zone before it is touched beyond that zone by R and before it has come to rest.</p>
+            <p> A new series is awarded to R at the spot of recovery if there is joint possession by R and K of a recovered kick, unless there is first touching by K.</p>
+            <p> When any scrimmage kick is out of bounds between the goal lines or becomes dead inbounds between the goal lines while no player is in possession, the ball is awarded to R. Following an out-of-bounds kick, the ball is put in play at the inbounds spot unless R chooses a spot of first touching.</p>
+        </div>
+        
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">Lining Up Over Snapper</span>
+        </div>
+        <div class="accordion-content ">
+            <p>No defensive player may be lined up over the snapper and on the line of scrimmage if there is no player in position to take a hand-to-hand snap. The restriction is not in effect if an offensive player shifts to a position to take a hand to-hand snap.</p>
+                <h4> Penalty</h4>
+                <p>For the first violation by a team, the ball remains dead and a warning is issued.</p>
+                <div class="icons">
+                    <a href="#coach" class="coach-icon pop-up-link"></a>
+                    <div id="coach_c" class="pop-up">
+                        <div class="pop-up-wrapper">
+                            <img src="http://signals.usafootball.com/uploads/catagory/image_hdpi/17/10.png" alt="" />
+                            <div class="caption">
+                                <div class="rule-number">21</div>
+                                <div class="rule-name">Delay of game</div>
+                            </div>
+                            <div class="close-btn"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                
+                
+                <br/><p>Second violation</p>
+                
+                <div class="icons">
+                    <a href="#coach" class="coach-icon pop-up-link"></a>
+                    <div id="coach" class="pop-up">
+                        <div class="pop-up-wrapper">
+                            <img src="http://signals.usafootball.com/uploads/catagory/image_hdpi/17/10.png" alt="" />
+                            <div class="caption">
+                                <div class="rule-number">21</div>
+                                <div class="rule-name">Delay of game</div>
+                            </div>
+                            <div class="close-btn"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="yds-icon"></div>
+                    <div class="clear"></div>
+                </div>
+            
+            
+            
+           <br/> <p>Third and subsequent violations</p>
+            
+            <div class="icons">
+                <a href="#coach1" class="coach-icon pop-up-link"></a>
+                <div id="coach1" class="pop-up">
+                    <div class="pop-up-wrapper">
+                        <img src="http://signals.usafootball.com/uploads/catagory/image_2x/47/3.png" alt="" />
+                        <div class="caption">
+                            <div class="rule-number">27</div>
+                            <div class="rule-name">Unsportsmanlike conduct noncontact foul</div>
+                        </div>
+                        <div class="close-btn"></div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+                <div class="yds-fifteen-icon"></div>
+                <div class="clear"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+  
+</div>
+</body>
+</html>

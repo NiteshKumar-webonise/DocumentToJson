@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+            $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function () {
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+
+
+        });
+
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>No player, coach, substitute, athletic trainer or other team
+			attendant shall act in an unsportsmanlike manner once the officials
+			assume authority for the contest. Examples are, but not limited to,
+			baiting or taunting acts or words or insignia worn that engenders ill
+			will; using profanity, insulting or vulgar language or gestures; any
+			delayed, excessive or prolonged act by that a player or coach
+			attempts to focus attention upon himself; attempting to influence a
+			decision by an official; disrespectfully addressing an official;
+			indicating objections to an official&apos;s decision; using any
+			illegal communication equipment; holding an unauthorized conference;
+			the failure of a team to be ready to start either half; failure of
+			the head coach, following verification, to have his player(s) wear or
+			use legal and/or required equipment; being on the field except as a
+			substitute or replaced player; using tobacco or smokeless tobacco; a
+			substitute who leaves the team box during a fight; using
+			disconcerting acts or words prior to the snap in an attempt to
+			interfere with A&apos;s signals or movements; intentionally kicking
+			at the ball, other than during a legal kick; leaving the field
+			between downs to gain an advantage unless replaced or unless with
+			permission of an official; refusing to comply with an official&apos;s
+			request</p>
+
+		<div class="accordion-wrapper">
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Ball
+					becomes dead in possession of a player</span>
+			</div>
+			<div class="accordion-content ">
+				<p>When the ball becomes dead in possession of a player, he
+					shall not intentionally kick the ball, spike the ball into the
+					ground, throw the ball high into the air or from the field of play
+					or intentionally fail to place the ball on the ground or
+					immediately return it to a nearby official.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Taunting</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Any form of taunting that is intended or designed to
+					embarrass, ridicule or demean others under any circumstances
+					including on the basis of race, religion, gender or national origin
+					is to be penalized.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Nonplayers
+					and coaches</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A nonplayer shall not be outside his team box unless to
+					become a player or to return as a replaced player. A maximum of
+					three coaches may be in the coaches&apos; area.</p>
+			</div>
+
+
+
+		</div>
+
+
+		<h4>PENALTY</h4>
+		<div class="icons">
+			
+			<a href="#coach1" class="coach-icon pop-up-link"></a>
+			<div id="coach1" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+						src="http://signals.usafootball.com/uploads/catagory/image_2x/47/3.png"
+						alt="" />
+
+					<div class="caption">
+						<div class="rule-number">27</div>
+						<div class="rule-name">Nonplayer and Unsportsmanlike Fouls</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+			<div class="yds-fifteen-icon"></div>
+			<div class="clear"></div>
+		</div>
+<p>A single flagrant act may result in disqualification. Two unsportsmanlike fouls by the same player or nonplayer results in disqualification.</p>
+
+<div class="icons">
+    <a href="#coach" class="coach-icon pop-up-link"></a>
+    
+    <div id="coach" class="pop-up">
+        <div class="pop-up-wrapper">
+            <img
+            src="http://signals.usafootball.com/uploads/catagory/image_2x/50/6.png"
+            alt="" />
+            
+            <div class="caption">
+                <div class="rule-number">47</div>
+                <div class="rule-name">Nonplayer and Unsportsmanlike Fouls</div>
+            </div>
+            <div class="close-btn"></div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="clear"></div>
+    </div>
+		<h4>APPROVED RULINGS</h4>
+
+
+		<div class="accordion-wrapper">
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.A</span>
+			</div>
+			<div class="accordion-content ">
+				<p>During a run by A1 on first down from A&apos;s 10 to
+					midfield, A2 clips B1 at A&apos;s 20 and (a) B1 swears at A2 or (b)
+					A3 taunts B2. RULING: The unsportsmanlike foul in (a) or (b) is not
+					paired with any other foul to create a double or multiple foul.
+					Following the acceptance of the penalty for the clip by A2, the
+					unsportsmanlike fouls will be administered from A&apos;s 10, that
+					is the succeeding spot. In (a), it will be A&apos;s ball first down
+					and 10 from its own 25- yard line. In (b), it will be A&apos;s ball
+					first and 15 from A&apos;s 5-yard line.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.B</span>
+			</div>
+			<div class="accordion-content ">
+				<p>On third-and-10 from A&apos;s 40-yard line, all team A
+					players are set. While quarterback A1 is calling signals, defensive
+					back B1, starting from a position eight yards behind his line of
+					scrimmage, runs toward the neutral zone. B1 stops directly in front
+					of tackle A4. In response to B1&apos;s charge, A4 (a) does not move
+					or (b) flinches. RULING: No foul in (a). In (b), A4 is guilty of a
+					dead-ball foul for false start. If in the official&apos;s judgment
+					the action by B1 was for the purpose of disconcerting or hindering
+					A, it is an unsportsmanlike conduct foul. In that case, the
+					official should sound the whistle before the snap.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.C</span>
+			</div>
+			<div class="accordion-content ">
+				<p>In the process of scoring a touchdown, A1 (a) holds and waves
+					the ball overhead the last 10 yards, (b) throws the ball into the
+					bleachers, (c) kicks the ball from the field, (d) spikes the ball
+					to the ground with force, (d) does a series of back flips or (e)
+					runs toward his team box, then stops and struts back and forth in
+					front of the fans. RULING: Unsportsmanlike conduct in all cases.
+					The 15-yard penalty is assessed on the try.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.D</span>
+			</div>
+			<div class="accordion-content ">
+				<p>After crossing the goal line for a touchdown, A1 (a)
+					momentarily raises the ball overhead but then quickly drops it to
+					the ground, (b) jumps into the arms of teammate A2 for a hug or (c)
+					has a group hug with several teammates. RULING: No foul in (a), (b)
+					or (c).</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.E</span>
+			</div>
+			<div class="accordion-content ">
+				<p>B1 calls defensive signals loudly (a) before A takes its set
+					position, (b) during the time A1 is giving his cadence count or (c)
+					while A1 is using audibles. RULING: Legal in (a). In (b) and (c),
+					if in the official&apos;s judgment the action by B1 was for the
+					purpose of disconcerting or hindering A, it is an unsportsmanlike
+					conduct foul. In that case, the official should sound his whistle
+					before the snap.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.F</span>
+			</div>
+			<div class="accordion-content ">
+				<p>After A1 carries the ball into B's end zone, he is knocked
+					down by B1 clearly after the ball is dead. RULING: B1&apos;s
+					dead-ball contact foul will be penalized on the try to the
+					11/2-yard line. If deemed flagrant, B1 could be disqualified.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.G</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Following the second 15-yard unsportsmanlike foul by the
+					coach of B, the referee notifies him that he may no longer remain
+					in the vicinity of the playing field and that he may not have any
+					contact with his players, either direct or indirect, throughout the
+					remainder of the game including halftime. The coach departs to the
+					(a) stands, (b) press box or (c) the team locker room. RULING:
+					Illegal in (a) and (b). Legal in (c). In (c), if the coach has been
+					disqualified in the first half and has gone to the locker room, he
+					must leave the locker room if the team comes to the locker room.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.H</span>
+			</div>
+			<div class="accordion-content ">
+				<p>In the first half, the head coach of A has been penalized (a)
+					5 yards or (b) 15 yards for being outside the box and on the field
+					of play. In the third period the coach is again in violation.
+					RULING: In both (a) and (b), another 15-yard unsportsmanlike
+					penalty is assessed. In (b) the coach must be disqualified since he
+					has now committed his second 15-yard unsportsmanlike foul. The
+					initial 5-yard penalty in (a) for sideline interference is not
+					counted as one of the two fouls leading to disqualification.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.I</span>
+			</div>
+			<div class="accordion-content ">
+				<p>In the first period, A is warned and then later penalized 5
+					yards for having more than three coaches in the two-yard belt
+					between the sideline and the team box. The same infraction occurs
+					again in the third period. RULING: The third and subsequent
+					infractions result in 15-yard penalties. If the individual offender
+					cannot be determined, the fouls are all charged to the head coach.
+					The second 15-yard unsportsmanlike foul is considered flagrant and
+					the head coach must be removed from the stadium area. If an
+					individual assistant coach is the offender, he - not the head coach
+					- is charged with the foul.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR 10.1.J</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A1 is deaf. A&apos;s coach requests the referee to (a) permit
+					a signer to go to the team huddle to relay the play-call to the
+					deaf player or (b) permit the signer to move up and down the
+					sideline without penalty. RULING: Not permitted in (a) or (b).
+					However, a reasonable accommodation is to permit the signer to
+					occupy the coaching box but not be counted as one of the three
+					allowable coaches.</p>
+			</div>
+
+
+
+		</div>
+	</div>
+</body>
+</html>

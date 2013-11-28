@@ -18,41 +18,44 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSArray *rulesArr=[NSArray arrayWithObjects:@"Timing",@"Officials and their Duties",@"Field and Equipment",@"Basic Definitions",@"Kicks",@"Snapping and Handing the Ball",@"Passing",@"Series of Downs",@"Contact",@"Scoring and Touchbacks",@"Penalty Enforcement",@"Non-Contact Fouls", nil];
-    
-      NSArray *allFiles=[NSArray arrayWithObjects:@"game",@"terminology",@"eligibility",@"equipment",@"field",@"rosters",@"timingandovertime",@"scoring",@"coaches",@"liveballdeadball",@"running",@"passing",@"receiving",@"rushingthepasser",@"flagpulling",@"formations",@"unsportsmanlikeconduct",@"penalties", nil];
-    
-    NSMutableArray *allJson=[[NSMutableArray alloc]init];
-    NSMutableArray *youthTrack=[[NSMutableArray alloc]init];
-    
-    for(int i=0;i<[rulesArr count]; i++){
-        
-
-    for(int i=0;i<[allFiles count];i++){
-        NSString *path=[[NSBundle mainBundle]pathForResource:[allFiles objectAtIndex:i] ofType:@"html"];
-        if (!path){
-          NSLog(@"Unable to find file in bundle", nil);
-            continue;
-        }
-        NSString *contents =[NSString stringWithContentsOfFile:path encoding:NSASCIIStringEncoding error:nil];
-        NSString *htmlStripped=[self stringByStrippingHTMLWithString:contents];
-        NSString *data=[htmlStripped stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        NSDictionary *dict=[[NSDictionary alloc]init];
-        dict =@{@"shareurl":@"",@"html":[allFiles objectAtIndex:i],@"description":data,@"fav":@false,@"rule":[allFiles objectAtIndex:i]};
-        [allJson addObject:dict];
-    }
-        
+    /*NSArray *rulesArr=[NSArray arrayWithObjects:@"Timing",@"Officials and their Duties",@"Field and Equipment",@"Basic Definitions",@"Kicks",@"Snapping and Handing the Ball",@"Passing",@"Series of Downs",@"Contact",@"Scoring and Touchbacks",@"Penalty Enforcement",@"Non-Contact Fouls", nil];
+     
+     NSArray *allFiles=[NSArray arrayWithObjects:@"game",@"terminology",@"eligibility",@"equipment",@"field",@"rosters",@"timingandovertime",@"scoring",@"coaches",@"liveballdeadball",@"running",@"passing",@"receiving",@"rushingthepasser",@"flagpulling",@"formations",@"unsportsmanlikeconduct",@"penalties", nil];
+     
+     NSMutableArray *allJson=[[NSMutableArray alloc]init];
+     NSMutableArray *youthTrack=[[NSMutableArray alloc]init];
+     
+     for(int i=0;i<[rulesArr count]; i++){
+     
+     
+     for(int i=0;i<[allFiles count];i++){
+     NSString *path=[[NSBundle mainBundle]pathForResource:[allFiles objectAtIndex:i] ofType:@"html"];
+     if (!path){
+     NSLog(@"Unable to find file in bundle", nil);
+     continue;
+     }
+     NSString *contents =[NSString stringWithContentsOfFile:path encoding:NSASCIIStringEncoding error:nil];
+     NSString *htmlStripped=[self stringByStrippingHTMLWithString:contents];
+     NSString *data=[htmlStripped stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+     NSDictionary *dict=[[NSDictionary alloc]init];
+     dict =@{@"shareurl":@"",@"html":[allFiles objectAtIndex:i],@"description":data,@"fav":@false,@"rule":[allFiles objectAtIndex:i]};
+     [allJson addObject:dict];
+     }
+     
      NSDictionary *outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":allJson};
-        
-    //NSString *jsonContent= [self getJsonFromDictionaryOrArray:outerDictionary];
-    //NSLog(@"%@",jsonContent);
-    //[self writeIntoFileWithString:jsonContent];
-        //NSDictionary *outerDictionary=[[NSDictionary alloc]init];
-        //outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":jsonContent};
-        [youthTrack addObject:outerDictionary];
-    }
-    NSString *jsonContent= [self getJsonFromDictionaryOrArray:youthTrack];
-    [self makePlistIntoHomeDirectoryWithContent:jsonContent];
+     
+     //NSString *jsonContent= [self getJsonFromDictionaryOrArray:outerDictionary];
+     //NSLog(@"%@",jsonContent);
+     //[self writeIntoFileWithString:jsonContent];
+     //NSDictionary *outerDictionary=[[NSDictionary alloc]init];
+     //outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":jsonContent};
+     [youthTrack addObject:outerDictionary];
+     }
+     NSString *jsonContent= [self getJsonFromDictionaryOrArray:youthTrack];
+     [self makePlistIntoHomeDirectoryWithContent:jsonContent];*/
+     
+    
+    
 }
 
 - (void)makePlistIntoHomeDirectoryWithContent:(NSString*)content{

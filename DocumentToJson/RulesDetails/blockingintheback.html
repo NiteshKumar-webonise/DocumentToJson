@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="colorbox.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function(){
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+                          
+
+        });
+
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+    <p>
+       Blocking in the back is a block against an opponent when the initial contact is in the opponent&apos;s back,
+        inside the shoulders and below the helmet and above the waist and not against a player who is a runner
+        or pretending to be a runner.
+
+
+    </p>
+    <div class="accordion-wrapper">
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">Situations when Illegal</span>
+        </div>
+        <div class="accordion-content">
+            <p>	Blocking an opponent in the back is illegal when it is not an attempt to ward off a blocker, reach a
+                runner or catch or recover a loose ball that the blocker may legally touch or possess or is not against a
+                player who is a runner or pretending to be a runner. When in doubt, the contact is legal and not from behind.
+            </p>
+        </div>
+    </div>
+        <h3>
+            PENALTY
+        </h3>
+       <!-- <p>10 yards. Signal 43. </p>-->
+        
+        <div class="icons">
+          <!--  <p>15 yards. Signal 40. If foul is by B, penalty includes an automatic first down. Signal 8.</p> -->
+            <a href="#coach" class="coach-icon pop-up-link"> </a>
+            
+            <div id="coach" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img src="http://signals.usafootball.com/uploads/catagory/image_2x/40/21.png" alt=""/>
+                    
+                    <div class="caption">
+                        <div class="rule-number">43</div>
+                        <div class="rule-name">Illegal block in the back</div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+              <div class="yds-ten-icon"></div>
+        
+    <div class="clear"></div>
+            <h3>
+                APPROVED RULINGS
+            </h3>
+
+    <div class="accordion-wrapper">
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.3.A</span>
+        </div>
+        <div class="accordion-content">
+            <p> A9 is approaching B10 in the open field and at an angle.
+                A9 pushes B10 in the back with one hand and with the other hand on the shoulder.
+                RULING: Illegal block in the back.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span><span class="head-text">AR 7.3.B</span>
+        </div>
+        <div class="accordion-content">
+            <p>Runner A1 breaks free beyond the neutral zone at midfield. A2 is running between A1 and safety B1,
+                who is gaining fast on both of them. As B1 nears A2 he pushes him from behind above the waist to clear the way to A1.
+                B1 subsequently tackles A1 at B&apos;s 10-yard line. RULING: B1's contact on blocker A2 is legal when attempting to get to the
+                runner or to catch or recover a loose ball that he may possess.
+            </p>
+        </div>
+   </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="colorbox.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function(){
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+        });
+
+    </script>
+    <script type="text/javascript">
+        function popup(msg) {
+            alert(msg);
+        }
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+    <p>
+        An offensive player (except the runner) shall not use his hands, arms or legs to hook, lock, clamp, grasp,
+        encircle or hold in an effort to restrain an opponent. A defensive player shall not use his hands, arms or legs to hook,
+        lock, clamp, grasp, encircle or hold in an effort to restrain an opponent other than the runner.
+    </p>
+        <h3>
+            PENALTY
+        </h3>
+
+        <div class="icons">
+            <a href="#coach" class="coach-icon pop-up-link"> </a>
+
+            <div id="coach" class="pop-up">
+                <div class="pop-up-wrapper">
+                    <img src="http://signals.usafootball.com/uploads/catagory/image_2x/39/20.png" alt=""/>
+
+                    <div class="caption">
+                        <div class="rule-number">42</div>
+                        <div class="rule-name">Holding/obstruction Illegal use of hands/arms</div>
+                    </div>
+                    <div class="close-btn"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+   <div class="yds-ten-icon"></div>
+        </div>
+    <div class="clear"></div>
+        <h3>
+           APPROVED RULINGS
+        </h3>
+    <div class="accordion-wrapper">
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.6.A</span>
+        </div>
+        <div class="accordion-content">
+            <p> During a scrimmage kick beyond the expanded neutral zone, R1 gives a fair-catch signal.
+                He muffs the kick into the air, where K3 tackles R1 following the muff, preventing R1 from catching the kick.
+                RULING: It is a holding foul for K3 to tackle R1 following the muff, thus preventing him from reaching the ball.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.6.B</span>
+        </div>
+        <div class="accordion-content">
+            <p> A11 is running a deep post pattern and B11 grabs A11&apos;s jersey. The pass has already crossed the neutral zone
+                and the pass is clearly away from the intended receiver. RULING: That is a foul for holding.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.6.C</span>
+        </div>
+        <div class="accordion-content">
+            <p> A1 is blocking with open hands (a) outside his own frame or (b) outside B1&apos;s frame, during contact.
+                RULING: A1 is using an illegal blocking technique in both (a) and (b). When the hands are outside the frame,
+                as described above and grasps the opponent or his equipment, it is a holding foul instead of illegal use of hands.
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.6.D</span>
+        </div>
+        <div class="accordion-content">
+            <p>  Quarterback A1 drops back 15 yards and throws a legal forward pass intended for A2,
+                who is 5 yards behind the neutral zone. Before the pass reaches A2, B1 tackles A2.
+                RULING: Tackling A2 is a foul as it is a form of holding. Defensive players are prohibited from grasping an
+                opponent other than the runner. The foul occurs during a loose-ball play and the 10- yard penalty will be administered
+                from the previous spot.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

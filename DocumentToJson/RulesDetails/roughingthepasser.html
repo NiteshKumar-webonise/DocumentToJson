@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="colorbox.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function(){
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+                          
+
+        });
+
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+    <p>
+       A passer is a player who throws a legal forward pass. He continues to be a passer
+        until the legal forward pass ends or until he moves to participate in the play.
+    </p>
+    <div class="accordion-wrapper">
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">Charging</span>
+        </div>
+        <div class="accordion-content">
+            <p>Defensive players must make a definite effort to avoid charging into a passer,
+                who has thrown the ball from in or behind the neutral zone, after it is clear the ball has
+                been thrown. No defensive player shall charge into the
+                passer who is standing still or fading back, because he is considered out of the play after the pass.
+            </p>
+        </div>
+    </div>
+
+        <h3>
+            PENALTY
+        </h3>
+        <p>15 yards and a first down from the end of the last run when the last run ends beyond
+            the neutral zone and there has been no change of team possession.</p><p> Otherwise, the penalty is
+            15 yards and an automatic first down from the previous spot.</p>
+        <div class="icons">
+        <a href="#coach" class="coach-icon pop-up-link"> </a>
+        
+        <div id="coach" class="pop-up">
+            <div class="pop-up-wrapper">
+                <img src="http://signals.usafootball.com/uploads/catagory/image_2x/31/12.png" alt=""/>
+                
+                <div class="caption">
+                    <div class="rule-number">34</div>
+                    <div class="rule-name">Roughing the Passer</div>
+                </div>
+                <div class="close-btn"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="yds-fifteen-icon"></div>
+        <div class="clear"></div>
+        <p>Disqualification also if any foul is flagrant</p>
+        <div class="clear"></div>
+
+        <a href="#coach1" class="coach-icon pop-up-link"> </a>
+        
+        <div id="coach1" class="pop-up">
+            <div class="pop-up-wrapper">
+                <img src="http://signals.usafootball.com/uploads/catagory/image_2x/50/6.png" alt=""/>
+                
+                <div class="caption">
+                    <div class="rule-number">47</div>
+                    <div class="rule-name">Roughing the Passer</div>
+                </div>
+                <div class="close-btn"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        </div>
+    <div class="clear"></div>
+        <h3>
+            APPROVED RULINGS
+        </h3>
+    <div class="accordion-wrapper">
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.16.A</span>
+        </div>
+        <div class="accordion-content">
+            <p>A1 (a) passes from behind the neutral zone and is subsequently contacted by B1,
+                who could have avoided the contact but renewed his charge after the pass or (b) is two yards beyond
+                the neutral zone when he passes and B1 continues his charge and contacts him. RULING: It is roughing the passer in
+                (a). In (b), it cannot be roughing the passer because A1 lost his protection as a passer when he passed from beyond the
+                neutral zone. However, the contact could still be ruled a personal foul.
+
+
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.16.B</span>
+        </div>
+        <div class="accordion-content">
+            <p>A1&apos;s pass on fourth-and-15 from A&apos;s 40 is complete to A2 at midfield. During the pass, A1
+                is roughed by B1. A2 advances to B's 30 where he fumbles the ball out of bounds at B's (a) 28 or (b) 32-yard line.
+                RULING: In both (a) and (b), if the penalty is accepted, it is administered from the end of A2's run, that is B's 30-yard line.
+
+           </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.16.C</span>
+        </div>
+        <div class="accordion-content">
+            <p>From A&apos;s 20-yard line, passer A1 is roughed by B1. The pass is completed to A2 who is
+                (a) downed on A&apos;s 18 or (b) fumbles and the ball is recovered by B3. RULING: In (a) and (b),
+                enforcement is from the previous spot, resulting in a first down for A from B's 35-yard line.
+
+
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.16.D</span>
+        </div>
+        <div class="accordion-content">
+            <p>A1&apos;s pass on fourth-and-20 from A&apos;s 20 is complete to A2 at A&apos;s
+                25-yard line. During the pass, A1 is roughed by B1. A2 advances to A&apos;s 29,
+                where he fumbles. The ball (a) rolls out of bounds at A&apos;s 30 or (b) is recovered by B2 at A&apos;s 30.
+                RULING: Because of the change of possession in both (a) and (b), if the penalty is accepted, it is
+                administered from the end of A2&apos;s run (A&apos;s 29-yard line).
+
+
+            </p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

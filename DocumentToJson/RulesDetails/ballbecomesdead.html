@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+        <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+        });
+        
+    </script>
+    <title>xyz</title>
+</head>
+<body>
+<div class="content-wrapper">
+    <p>The ball becomes dead and the down is ended: </p>
+    <ol class="lower-alpha">
+    <li>When a kicked ball goes out of bounds.</li>
+    <li>When any legal free kick that is not a scoring attempt or that is a
+    grounded scoring attempt, breaks the plane of R's goal line.</li>
+    <li>When any legal free kick that is a scoring attempt, while in flight touches a K player in R's end zone or after breaking the plane of R's goal line has apparently failed.</li>
+    <li>When the ball is loose following a free kick and it is simultaneously caught or recovered by opposing players, is on the ground motionless and no player attempts to secure possession or touches or is touched by,
+    anything inbounds other than a player, substitute, replaced player, an official, the ground or authorized equipment.</li>
+    <li> When K catches or recovers any free kick anywhere and when K
+    catches or recovers a scrimmage kick beyond the neutral zone and when K
+    is first (i.e., before any touching by R) to touch a scrimmage kick after it has
+    come to rest beyond the neutral zone and between the goal lines.</li>
+    <li> Following a valid or invalid fair-catch signal given by any member of the receiving team when a scrimmage kick or free kick is caught or recovered by any member of the receiving team beyond, in or behind the neutral zone.</li>
+    <li>When a touchdown or field goal occurs.</li>
+    <li>During a try if B secures possession or as soon as it is apparent that a
+  kick has failed to score.</li>
+    <li> If the place kick holder muffs the snap or fumbles and recovers after his knees have been off the ground and he then touches the ground with a part of his body other than hand or foot while in possession of the ball.</li>
+    </ol>
+ 
+    <h3>APPROVED RULINGS</h3>
+    
+    <div class="accordion-wrapper">
+        <div class="accordion-head ">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 3.5.A</span>
+        </div>
+        <div class="accordion-content ">
+            <p>K1's field-goal attempt is partially blocked behind the neutral zone but deflects beyond the neutral zone and is then muffed by R1. The muffed ball is recovered (a) behind or (b) beyond the neutral zone by K2. RULING: In both (a) and (b), it is a first down for K. In (a), K2 could have advanced after recovering.</p>
+        </div>
+     
+    </div>
+</div>
+</body>
+</html>

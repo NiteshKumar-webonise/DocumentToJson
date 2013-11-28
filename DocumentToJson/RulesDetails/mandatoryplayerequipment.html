@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function () {
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+
+
+        });
+
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>Each player shall properly wear the mandatory equipment while
+			the ball is live. Each player shall participate while wearing legal
+			and properly fitted equipment, that shall be professionally
+			manufactured and not altered to decrease protection.</p>
+
+		<div class="accordion-wrapper">
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Equipment
+					Verification</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Prior to the start of the game, the head coach shall be
+					responsible for verifying to the referee and umpire that all of his
+					players are legally equipped and in compliance with the rules. Any
+					questions regarding legality of a player&apos;s equipment shall be
+					resolved by the umpire.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Correcting
+					Missing/Illegal Equipment</span>
+			</div>
+			<div class="accordion-content ">
+				<p>When any required player equipment is missing or when illegal
+					equipment is found, correction shall be made before participation.
+					An official&apos;s timeout shall be declared to permit prompt
+					repair of equipment that becomes illegal or defective through use.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Failure
+					to Use Required Equipment</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Failure of the head coach, following verification, to have
+					his player(s) wear or use legal and/or required equipment results
+					in a penalty for unsportsmanlike conduct charged to the head coach.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Helmet
+					and Facemask</span>
+			</div>
+			<div class="accordion-content ">
+				<p>All players shall wear helmets that carry a warning label
+					regarding the risk of injury and a manufacturer&apos;s or
+					reconditioner&apos;s certification indicating satisfaction of
+					NOCSAE (National Operating Committee on Standards for Athletic
+					Equipment) test standard at the time of manufacture. All such
+					reconditioned helmets shall show recertification to indicate
+					satisfaction with the NOCSAE test standard. The coach&apos;s
+					pregame verification to the referee and umpire that all players are
+					properly equipped in compliance with the rules includes the
+					exterior warning label. The facemask shall have a surface covered
+					with resilient material designed to prevent chipping, burrs or
+					abrasiveness and be properly secured to the helmet as designed by
+					the manufacturer. The helmet shall be secured by a properly
+					fastened chin strap with at least four attachment points.</p>
+				<p>If a player&apos;s helmet comes completely off through play,
+					other than as the direct result of a foul by an opponent, the
+					player must leave the game for the next down. The game clock will
+					stop at the end of the down. A team timeout is not permitted to
+					allow the player to remain in the game. The player must leave the
+					game for one</p>
+				<h3>APPROVED RULINGS</h3>
+				<p>AR 12.10.A : B10 has a chin strap with (a) two or (b) four
+					attachment points. The umpire notices that not all attachment
+					points are secured. RULING: That is a foul in both situations. All
+					available attachment points must be secured and all helmets must be
+					secured with a four-attachment points system.</p>
+				<p>AR 12.10.B : Flanker A1 is detected with a chin strap hanging
+					down (a) while going downfield in his pass pattern, (b) after being
+					blocked by B1 downfield or (c) after catching a pass and being hit
+					by B1, he is continuing downfield. RULING: No foul in (a), (b) and
+					(c) unless the covering official observes A1 unsnapping the strap.
+					That penalty would be enforced from the succeeding spot.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Jerseys
+					and Pants</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A jersey with clearly visible and legible Arabic numbers 1-99
+					inclusive on the front and back that are long enough to reach the
+					top of the pants and shall be tucked in if longer.</p>
+				<p>Each player shall be numbered 1 through 99 inclusive. The
+					numbers shall be centered horizontally at least eight inches and 10
+					inches high on front and back, respectively and with bars or
+					strokes approximately 1-1/2 inches wide. The color and style of the
+					number shall be the same on the front and back. The body of the
+					number shall be either a color(s) contrasting with the jersey color
+					or the same solid color(s) as the jersey with a minimum of one
+					border that is at least 1/4 inch in width of a single solid
+					contrasting color.</p>
+				<p>Players of the opposing teams shall wear jerseys of
+					contrasting colors.</p>
+				<p>An American flag, not to exceed two by three inches and
+					either a commemorative or memorial patch, not to exceed four square
+					inches and with written league approval, may be worn on the jersey
+					provided neither the flag nor the patch interferes with the
+					visibility of the number.</p>
+				<p>When an official discovers a player who has any amount of
+					blood the uniform is appropriately cleaned and/or the uniform is
+					changed before returning to competition. Such player shall be
+					considered an apparently injured player.</p>
+				<p>Every player is required to wear pants that cover the knees
+					and knee pads.</p>
+				<h3>APPROVED RULINGS</h3>
+				<p>AR 12.10.C : After the ball has been marked ready for play,
+					but prior to the snap, it is discovered (a) A1 and A2 are both
+					wearing number 81 or (b) B2 is wearing 00. RULING: In (a), it will
+					become a foul at the snap for illegal numbering. In (b), it is a
+					foul before the snap for illegal numbering and B2 will not be
+					permitted to participate with that number, because 00 is not a
+					legal number. If the illegal numbering is discovered during the
+					down, it is a foul that occurred at the snap.</p>
+				<p>AR 12.10.D : Team A&apos;s players are wearing jerseys (a)
+					just covering the shoulder pads and their midriffs are exposed, (b)
+					that extend below the top of their pants, but some players have
+					them tucked in, while others have them outside their pants or (c)
+					that are waist length but have tucked them up under the bottom of
+					their shoulder pads. RULING: The jerseys in (a) and (c) are not
+					legal. In (b), the jerseys of all players will have to be tucked
+					inside the pants upon discovery.</p>
+
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Pads</span>
+			</div>
+			<div class="accordion-content accordion-content1">
+				<p>Required pads are hip pads and tailbone protector, unaltered
+					from the manufacturer&apos;s original design/production; knee pads,
+					unaltered from the manufacturer's original design/production, that
+					are worn over the knee and under the pants and at least 1/2 inch
+					thick or 3/8 inch thick if made of shock- absorbing material;
+					shoulder pads and hard surface auxiliary attachments, that shall be
+					fully covered by a jersey; and thigh guards, unaltered from the
+					manufacturer's original design/production, that shall have any hard
+					surface covered with material such as closed-cell vinyl foam that
+					has a minimum compression resistance of 4-8 pounds for 25 percent
+					compression or other material with equivalent specifications and is
+					at least 1/4 inch thick on the outside surface and at least 3/8
+					inch thick on the inside surface and the overlap of the edge.
+					Shinguards, if worn, must meet NOCSAE specifications.</p>
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Shoes</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Every player must wear shoes and shall be made of a material
+					that covers the foot (canvas, leather or synthetic) attached to a
+					firm sole of leather, rubber or composition material that may have
+					cleats or that may be cleatless. Among the items that do not meet
+					the requirements are gymnastic slippers, tennis shoes cut so
+					protection is reduced, ski and logger boots and other apparel not
+					intended for football use.</p>
+				<p>Metal cleats are not legal. Removable cleats shall be
+					constructed of a material that does not chip or develop a cutting
+					edge. Legal material includes leather, nylon, certain plastics and
+					rubber; the use of aluminum or ceramics is not permissible. The
+					base and the tip of the cleat shall be parallel. The free end may
+					be rounded in an arc with a radius of not less than 7/16 inch
+					provided the overall length is not more than 1/2 inch measured from
+					the tip of the cleat to the sole of the shoe. The cleat may be
+					attached to a raised platform that is molded to the shoe. The
+					platform may be no more than 5/32 inch in height and must be wider
+					than the base of the cleat. The widest part of the cleat must be in
+					direct contact with the platform. The 5/32 inch raised platform
+					must be wider than the base of the cleat and must extend across the
+					width of the sole to within 1/4 inch or less of the outer edges of
+					the sole. A single toe cleat does not require a raised platform
+					that extends across the width of the sole. The raised platform of
+					the toe cleat is limited to 5/32 inch or less. The 5/32 inch
+					platform is measured from the lowest point of the platform to the
+					sole of the shoe. Removable cleats must have an effective locking
+					device that prevents the exposure of metal posts shall be
+					incorporated. The cleat wall shall be at least 3/16 inch in
+					diameter. The sides of the removable cleat shall taper uniformly
+					from a minimum base of 3/4 inch in diameter to a minimum tip of 3/8
+					inch in diameter.</p>
+				<p>Nonremovable cleats are limited to studs or projections that
+					do not exceed 1/2 inch in length measured from the sole of the shoe
+					to the tip of the cleat and that are made with nonabrasive rubber
+					or rubber-type synthetic material that does not have or develop a
+					cutting edge.</p>
+
+			</div>
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Tooth
+					and Mouth pretectors</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Every player is required to wear a tooth and mouth protector
+					(intraoral) that shall include an occlusal (protecting and
+					separating the biting surfaces) and a labial (protecting the teeth
+					and supporting structures) portion and covers the posterior teeth
+					with adequate thickness. It is recommended the protector be
+					properly fitted and constructed from a model made from an
+					impression of the individual's teeth and constructed and fitted to
+					the individual by impressing the teeth into the tooth and mouth
+					protector itself. The tooth and mouth protector shall be of any
+					readily visible color, other than completely white or completely
+					clear. The tooth and mouth protector need not be attached to the
+					helmet or facemask. A tooth and mouth protector with a breakaway
+					tether is legal.</p>
+				<h3>APPROVED RULINGS</h3>
+				<p>AR 12.10.E : A4 is noticed to (a) have a clear tooth and
+					mouth protector or (b) have a tooth and mouth protector that is
+					only covering the upper, front teeth. RULING: All tooth and mouth
+					protectors shall (a) be a color other than completely clear or
+					white and (b) the tooth and mouth protector must also cover the
+					posterior teeth. The officials should, through normal observations,
+					attempt to verify that each player is legally equipped prior to the
+					ball becoming live and if illegal equipment is detected, that
+					player must fix the problem or leave the game. If the officials are
+					unable to detect the illegal equipment and the player is observed
+					wearing a completely clear or white mouth protector during a down,
+					a foul is to be called.</p>
+			</div>
+
+
+
+		</div>
+
+
+		<h4>PENALTY</h4>
+		<p>Failure to properly wear required equipment during a down</p>
+        <div class="clear"></div>
+		<div class="icons">
+			<a href="#coach1" class="coach-icon pop-up-link"> </a>
+
+			<div id="coach1" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+						src="http://signals.usafootball.com/uploads/catagory/image_2x/47/3.png"
+						alt="" />
+
+					<div class="caption">
+						<div class="rule-number">27</div>
+						<div class="rule-name">Unsportsmanlike conduct Noncontact
+							foul</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+            <a href="#coach4" class="coach-icon pop-up-link"> </a>
+			<div id="coach4" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+                    src="http://signals.usafootball.com/uploads/catagory/image_2x/19/12.png"
+                    alt="" />
+                    
+					<div class="caption">
+						<div class="rule-number">23</div>
+						<div class="rule-name">Failure to wear required equipment</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+            
+            <div class="yds-icon pop-up-link"></div>
+			<div class="clear"></div>
+            <p>Failure to properly wear required equipment when the ball is about to become live, dead-ball foul</p>
+            <div class="clear"></div>
+			<a href="#coach2" class="coach-icon pop-up-link"> </a>
+			<div id="coach2" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+						src="http://signals.usafootball.com/uploads/catagory/image_2x/8/1.png"
+						alt="" />
+
+					<div class="caption">
+						<div class="rule-number">7</div>
+						<div class="rule-name">Dead ball foul, touchback (move side
+							to side)</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+          
+            
+			<a href="#coach3" class="coach-icon pop-up-link"> </a>
+			<div id="coach3" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+						src="http://signals.usafootball.com/uploads/catagory/image_hdpi/17/10.png"
+						alt="" />
+
+					<div class="caption">
+						<div class="rule-number">21</div>
+						<div class="rule-name">Delay of game</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+                <div class="yds-icon pop-up-link"></div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

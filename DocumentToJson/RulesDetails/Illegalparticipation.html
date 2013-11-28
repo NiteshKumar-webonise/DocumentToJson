@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="colorbox.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+            $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function () {
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+
+
+        });
+
+    </script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<p>Prior to a change of possession or when there is no change of
+			possession, no player of A or K shall go out of bounds and return
+			during the down unless blocked out of bounds by an opponent. If a
+			player is blocked out of bounds by an opponent and returns inbounds
+			during the down, he shall return at the first opportunity.</p>
+
+		<div class="accordion-wrapper">
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Intentional
+					Out of Bounds</span>
+			</div>
+			<div class="accordion-content ">
+				<p>During the down, no player shall intentionally go out of
+					bounds and return.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Hindering
+					an Opponent</span>
+			</div>
+			<div class="accordion-content ">
+				<p>No replaced player, substitute, coach, trainer or other team
+					personnel shall hinder an opponent, touch the ball, influence the
+					play or otherwise participate.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Illegal
+					Participation</span>
+			</div>
+			<div class="accordion-content ">
+				<p>It is illegal participation when any player, replaced player,
+					substitute coach, trainer or other team personnel enters and
+					participates during a down.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">Illegal
+					Participation Continued</span>
+			</div>
+			<div class="accordion-content ">
+				<p>It is illegal participation if an injured player is not
+					replaced for at least one down, unless the halftime or intermission
+					occurs; to have 12 or more players participating at the snap or
+					free kick; to use a player, replaced player or substitute in a
+					substitution or pretended substitution to deceive opponents at or
+					immediately before the snap or free kick; for a player to be lying
+					on the ground to deceive opponents at or immediately before the
+					snap or free kick; for a disqualified player to re-enter the game.
+					A disqualified player is a player barred from further participation
+					in a game. A disqualified player shall be removed.</p>
+			</div>
+		</div>
+		<h4>PENALTY</h4>
+		<div class="icons">
+			<a href="#coach" class="coach-icon pop-up-link"></a>
+
+			<div id="coach" class="pop-up">
+				<div class="pop-up-wrapper">
+					<img
+						src="http://signals.usafootball.com/uploads/catagory/image_2x/25/6.png"
+						alt="" />
+
+					<div class="caption">
+						<div class="rule-number">28</div>
+						<div class="rule-name">Illegal Participation</div>
+					</div>
+					<div class="close-btn"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+			<div class="yds-fifteen-icon"></div>
+			<div class="clear"></div>
+		</div>
+<p>Yards assessed from the previous spot.</p>
+		<h4>APPROVED RULINGS</h4>
+
+
+		<div class="accordion-wrapper">
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					10.5.A</span>
+			</div>
+			<div class="accordion-content ">
+				<p>A number of team substitutes enter the field between downs.
+					The officials do not recognize that one replaced player does not
+					leave the field immediately. When the ball is snapped A12 is in the
+					formation as an extra lineman. RULING: It is illegal participation.
+					If the official&apos;s count is not completed before the snap is
+					imminent or if the substitution has not been monitored, it becomes
+					illegal participation at the snap if more than 11 are in the
+					formation. Each team is responsible for substituting legally and
+					for replaced players to leave immediately as required.</p>
+			</div>
+
+
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					10.5.B</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Eligible receiver A1 is running a sideline route when he
+					intentionally steps out of bounds at A&apos;s 30-yard line. A1
+					returns inbounds and (a) catches or touches a forward pass from A2,
+					(b) cannot catch a forward pass because of interference by B3 or (c
+					) interferes with B3 so he cannot intercept the pass. RULING:
+					Stepping out of bounds means A1 is guilty of illegal participation,
+					a 15-yard penalty enforced from the previous spot. He is not an
+					ineligible illegally downfield. In (a), when he catches or touches
+					the pass, he is also guilty of illegal touching. In (b), the
+					interference by B3 creates a double foul; the penalties cancel and
+					the down is replayed. In (c), A1 is also guilty of offensive pass
+					interference.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					10.5.C</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Fourth-and-15 on K&apos;s 30-yard line. K1 accidentally steps
+					on the sideline while K2&apos;s punt is in the air. K1 returns
+					inbounds at midfield before or (b) after R1 catches the ball and
+					makes the tackle on R&apos;s 40. RULING: Since K1 went out of
+					bounds before the change of possession, it is an illegal
+					participation foul in both (a) and (b) when he returns inbounds. In
+					(a), if accepted, the penalty is enforced from the previous spot as
+					the foul occurred during a loose ball play. In (b), since the foul
+					occurred during R1&apos;s run, the 15-yard penalty is enforced from
+					the end of R1&apos;s run.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					10.5.D</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Between second and third downs, A&apos;s head coach sends
+					several substitutes into the game. A11, believing that he has been
+					replaced, leaves the field and goes directly to his team&apos;s
+					box. Realizing that his position has not been substituted for, A11
+					enters the field as the ball is being snapped, runs a pass pattern
+					and catches the ball for a first down. RULING: That is illegal
+					participation and is marked off 15 yards from the basic spot.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					10.5.E</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Several A substitutes enter the field between downs and go to
+					the team&apos;s huddle, but one replaced player does not leave
+					immediately and is not detected. However, when they break the
+					huddle the replaced player runs toward his sideline and leaves the
+					field just before the ball is snapped. RULING: An illegal
+					participation foul if the official judges that A was using a
+					replaced player or substitute in a substitution or pretended
+					substitution to deceive the opponents. If not, it is illegal
+					substitution.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					10.5.F</span>
+			</div>
+			<div class="accordion-content ">
+				<p>Following a kickoff return, A1 and A2 enter the field while
+					A3, A4 and A5 move toward the sideline. A5 stops within the
+					nine-yard marks while A3 and A4 continue to the team box. The ball
+					is snapped without a huddle and the quarterback throws a forward
+					pass to A5, who has gone downfield as a wide receiver. RULING: That
+					play is illegal because a pretended substitution is used to deceive
+					the opponents. The penalty of 15 yards for the illegal
+					participation foul will be administered from the previous spot
+					since the foul occurred at the snap.</p>
+			</div>
+			<div class="accordion-head ">
+				<span class="plus-icon"></span><span class="head-text">AR
+					10.5.G</span>
+			</div>
+			<div class="accordion-content ">
+				<p>With third-and-10 from B&apos;s 30-yard line, A1 runs to B's
+					18-yard line where he is tackled. During the down: substitute A12
+					comes onto the field and blocks B1. RULING: A12 is guilty of
+					illegal participation.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

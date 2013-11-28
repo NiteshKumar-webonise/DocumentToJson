@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="colorbox.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.colorbox-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $(".accordion-content").hide();
+                          $(".accordion-head").click(function(){
+                                                     $(this).next().slideToggle().siblings(".accordion-content").slideUp();
+                                                     if($(this).hasClass('activeTab')){
+                                                     $(this).removeClass('activeTab');
+                                                     }
+                                                     else
+                                                     {
+                                                     $(this).addClass('activeTab');
+                                                     $(this).siblings().removeClass('activeTab');
+                                                     }
+                                                     });
+
+                          $(".pop-up").hide();
+                          $(".pop-up-link").click(function () {
+                                                  var currentTab = $(this).attr('href');
+                                                  $(this).addClass('active');
+                                                  setTimeout(function(){
+                                                  $(currentTab).show().addClass('active');
+                                                  return false;
+                                                    }, 50);
+                                                  });
+                          $(".close-btn").click(function(){
+                                                $(".pop-up-link").removeClass("active")
+                                                $(".pop-up").hide();
+                                                $(".pop-up").removeClass("active");
+                                                });
+
+
+        });
+
+    </script>
+</head>
+<body>
+<div class="content-wrapper">
+<p>
+    Blocking below the waist is making initial contact below the waist from the front
+    or side against an opponent other than a runner. Blocking below the waist applies only when the
+    opponent has one or both feet on the ground. No player (team A or team B) shall block an opponent
+    below the waist except to tackle a runner or player pretending to be a runner.
+
+
+</p>
+        <h3>
+            PENALTY
+        </h3>
+
+    <div class="icons">
+         <!---<p>15 yards. Signal 40. If foul is by B, penalty includes an automatic first down. Signal 8.</p>-->
+       
+        <a href="#coach1" class="coach-icon pop-up-link"> </a>
+        <div id="coach1" class="pop-up">
+            <div class="pop-up-wrapper">
+                <img
+                        src="http://signals.usafootball.com/uploads/catagory/image_2x/37/18.png"
+                        alt=""/>
+
+                <div class="caption">
+                    <div class="rule-number">40</div>
+                    <div class="rule-name">Blocking below Waist Illegal block
+                    </div>
+                </div>
+                <div class="close-btn"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="yds-fifteen-icon"></div>
+        <div class="clear"></div>
+        <p>If foul is by B, penalty includes an automatic first down</p>
+        <a href="#coach" class="coach-icon pop-up-link"> </a>
+        
+        <div id="coach" class="pop-up">
+            <div class="pop-up-wrapper">
+                <img src="http://signals.usafootball.com/uploads/catagory/image_2x/9/2.png" alt=""/>
+                
+                <div class="caption">
+                    <div class="rule-number">8</div>
+                    <div class="rule-name">First Down</div>
+                </div>
+                <div class="close-btn"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+    </div>
+    <div class="clear"></div>
+        <h3>
+            APPROVED RULINGS
+        </h3>
+    <div class="accordion-wrapper">
+        <div class="accordion-head">
+           <span class="plus-icon"></span>
+            <span class="head-text">AR 7.2.A</span>
+        </div>
+        <div class="accordion-content">
+            <p> A1 is in shotgun formation, lined up seven yards behind the line of scrimmage ready t
+                o receive the snap. Immediately after the snap to A1, (a) A2 immediately drops and blocks B1
+                below the waist or (b) A2 rises and slightly retreats as if to go in traditional pass blocking
+                protection but then dives and blocks B1 below the waist. RULING: Illegal block in (a) and (b).
+                Blocking below the waist in the manner described is illegal.
+
+            </p>
+        </div>
+        <div class="accordion-head">
+           <span class="plus-icon"></span><span class="head-text">AR 7.2.B</span>
+        </div>
+        <div class="accordion-content">
+            <p>A runs a sweep with A2 leading the blocking. B3 blocks A2 below the
+                waist to allow teammates to reach the runner. RULING: Foul. Blocking below
+                the waist restrictions apply to both teams.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
