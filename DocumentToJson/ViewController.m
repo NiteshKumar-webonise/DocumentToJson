@@ -22,11 +22,11 @@
     
       NSArray *allFiles=[NSArray arrayWithObjects:@"game",@"terminology",@"eligibility",@"equipment",@"field",@"rosters",@"timingandovertime",@"scoring",@"coaches",@"liveballdeadball",@"running",@"passing",@"receiving",@"rushingthepasser",@"flagpulling",@"formations",@"unsportsmanlikeconduct",@"penalties", nil];
     
-    NSMutableArray *allJson=[[NSMutableArray alloc]init];
+    
     NSMutableArray *youthTrack=[[NSMutableArray alloc]init];
     
     for(int i=0;i<[rulesArr count]; i++){
-        
+        NSMutableArray *allJson=[[NSMutableArray alloc]init];
 
     for(int i=0;i<[allFiles count];i++){
         NSString *path=[[NSBundle mainBundle]pathForResource:[allFiles objectAtIndex:i] ofType:@"html"];
@@ -43,21 +43,17 @@
     }
         
      NSDictionary *outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":allJson};
-        
-    //NSString *jsonContent= [self getJsonFromDictionaryOrArray:outerDictionary];
-    //NSLog(@"%@",jsonContent);
-    //[self writeIntoFileWithString:jsonContent];
-        //NSDictionary *outerDictionary=[[NSDictionary alloc]init];
-        //outerDictionary=@{@"rule":[rulesArr objectAtIndex:i],@"value":jsonContent};
         [youthTrack addObject:outerDictionary];
     }
     NSString *jsonContent= [self getJsonFromDictionaryOrArray:youthTrack];
     [self makePlistIntoHomeDirectoryWithContent:jsonContent];
+    NSLog(@"here is json: %@",jsonContent);
 }
 
 - (void)makePlistIntoHomeDirectoryWithContent:(NSString*)content{
     NSString *filePath=[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/myfile.plist"];
     [content writeToFile:filePath atomically:YES encoding:NSStringEncodingConversionAllowLossy error:nil];
+    NSLog(@"plist file created ");
 }
 
 - (void)didReceiveMemoryWarning
