@@ -117,32 +117,6 @@
     return jsonString;
 }
 
-- (void)writeIntoFileWithString:(NSString*)data{
-    // Path for original file in bundle..
-    NSString *originalPath = [[NSBundle mainBundle] pathForResource:@"JsonFormat" ofType:@"txt"];
-    NSURL *originalURL = [NSURL URLWithString:originalPath];
-    
-    // Destination for file that is writeable
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSURL *documentsURL = [NSURL URLWithString:documentsDirectory];
-    
-    
-    NSString *fileNameComponent = [[originalPath pathComponents] lastObject];
-    NSURL *destinationURL = [documentsURL URLByAppendingPathComponent:fileNameComponent];
-    NSString *destinationUrlString=[NSString stringWithContentsOfURL:destinationURL encoding:NSUTF8StringEncoding error:nil];
-    // Copy file to new location
-    NSError *anError;
-    [[NSFileManager defaultManager] copyItemAtURL:originalURL
-                                            toURL:destinationURL
-                                            error:&anError];
-    
-    // Now you can write to the file....
-    NSString *string = data;
-    NSError *writeError = nil;
-    [string writeToFile:destinationUrlString  atomically:YES encoding:NSUTF8StringEncoding error:&writeError];
-    NSLog(@"%@", writeError.localizedFailureReason);
-}
 
 -(void)searchInContentWithSearchString:(NSString*)searchString{
     NSMutableArray* searchedFiles=[[NSMutableArray alloc]init];
