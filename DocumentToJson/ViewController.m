@@ -17,14 +17,17 @@
 @end
 
 @implementation ViewController
- NSArray *allFiles;
+@synthesize searchStringBar,allJson,allFiles;
+
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSArray *allFiles=[self getAllfileNamesFromBundle];
+    self.textView.text=@"";
+    allFiles=[self getAllfileNamesFromBundle];
      
-    NSMutableArray *allJson=[[NSMutableArray alloc]init];
+    allJson=[[NSMutableArray alloc]init];
     
      
      for(int i=0;i<[allFiles count];i++){
@@ -41,29 +44,6 @@
      dict =@{@"shareurl":@"",@"html":[allFiles objectAtIndex:i],@"description":data,@"fav":@false,@"rule":[allFiles objectAtIndex:i]};
      [allJson addObject:dict];
      }
-    
-    NSString* searchString=@"charged timeout";
-    NSMutableArray* searchedFiles=[[NSMutableArray alloc]init];
-    
-    NSDate *start = [NSDate date];
-    for(int i=0;i<[allJson count];i++){
-       NSString *content= [[allJson objectAtIndex:i] valueForKey:@"description"];
-       NSRange visibleTextRange=NSMakeRange(0, content.length);
-       NSDictionary *options=@{@"RWReplacementKey": @0,@"RWSearchCaseSensitiveKey":@1,@"RWSearchWholeWordsKey":@0};
-        
-       NSRegularExpression *regex = [self regularExpressionWithString:searchString options:options];
-       NSArray *matches = [regex matchesInString:content options:NSMatchingProgress range:visibleTextRange];
-        if([matches count]>0){
-            [searchedFiles addObject:[[allJson objectAtIndex:i] valueForKey:@"html"]];
-        }
-    }
-    NSDate *methodFinish = [NSDate date];
-    NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:start];
-    NSLog(@"Execution Time: %f", executionTime);
-    NSLog(@"Searched file names %@",searchedFiles);
-     //NSString *jsonContent= [self getJsonFromDictionaryOrArray:youthTrack];
-     //[self makePlistIntoHomeDirectoryWithContent:jsonContent];
-    
     
 }
 
@@ -164,4 +144,37 @@
     NSLog(@"%@", writeError.localizedFailureReason);
 }
 
+-(void)searchInContentWithSearchString:(NSString*)searchString{
+    NSMutableArray* searchedFiles=[[NSMutableArray alloc]init];
+    
+    NSDate *start = [NSDate date];
+    for(int i=0;i<[allJson count];i++){
+        NSString *content= [[allJson objectAtIndex:i] valueForKey:@"description"];
+        NSRange visibleTextRange=NSMakeRange(0, content.length);
+        NSDictionary *options=@{@"RWReplacementKey": @0,@"RWSearchCaseSensitiveKey":@1,@"RWSearchWholeWordsKey":@0};
+        
+        NSRegularExpression *regex = [self regularExpressionWithString:searchString options:options];
+        NSArray *matches = [regex matchesInString:content options:NSMatchingProgress range:visibleTextRange];
+        if([matches count]>0){
+            [searchedFiles addObject:[[allJson objectAtIndex:i] valueForKey:@"html"]];
+        }
+    }
+    NSDate *methodFinish = [NSDate date];
+    NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:start];
+    NSLog(@"Execution Time: %f", executionTime);
+    NSString *executionTimeString=[NSString stringWithFormat:@"%f",executionTime];
+    NSLog(@"Searched file names %@",searchedFiles);
+    self.textView.text=[[NSString stringWithFormat:@"%@",searchedFiles] stringByAppendingString:executionTimeString];
+    
+}
+
+#pragma mark -  UISearchBar Delegate
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    [self searchInContentWithSearchString:searchText];
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar{
+    [searchBar resignFirstResponder];
+}
 @end
